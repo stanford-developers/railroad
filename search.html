@@ -207,7 +207,7 @@ th, td {
 <script>
 async function performSearch() {
     const params = new URLSearchParams(window.location.search);
-    const query = params.get("q");
+    const query = params.get("q") || params.get("s");
 
     console.log("Search Query:", query);
 
