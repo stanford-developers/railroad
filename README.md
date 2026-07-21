@@ -75,13 +75,7 @@ The site is designed to deploy as ordinary static files. A server only needs to 
 
 No WordPress, PHP, CGI, or database is required for normal public use.
 
-Current deployment testing has used a Bluehost-hosted copy under:
-
-```text
-website_accessible/
-```
-
-For a Stanford-managed deployment, copy or deploy the full contents of this website root to the intended public web root.
+All paths are relative. Copy or deploy the full contents of this website root to the intended public web root.
 
 ## Maintenance Notes
 
