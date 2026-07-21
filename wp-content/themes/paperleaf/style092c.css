@@ -1,0 +1,62 @@
+/*
+Theme Name: Paperleaf
+Theme URI: http://themes.novuslabs.net/paperleaf
+Author: Novus Labs
+Author URI: http://www.nvslbs.com
+Description: Clean and minimal multipurpose theme
+Version: 1.1.2
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: paperleaf
+Tags: two-columns
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Paperleaf is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+*/
+
+/* Accessibility cleanup for Stanford minimum web standards. */
+a:focus,
+button:focus,
+input:focus,
+textarea:focus,
+select:focus,
+[tabindex]:focus {
+  outline: 3px solid #00548f;
+  outline-offset: 2px;
+}
+
+.entry-content a,
+.sidebar-footer a,
+#colophon a {
+  text-decoration: underline;
+  text-underline-offset: 0.12em;
+}
+
+.accessibility-link {
+  color: inherit;
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+
+.toggle-nav:focus {
+  outline: 3px solid #00548f;
+  outline-offset: 4px;
+}
+
+/* Static site heading scale. */
+h1,
+.h1 {
+  font-size: 1.75rem;
+}
+
+h2,
+.h2 {
+  font-size: 1.5rem;
+}
+
+.entry-content h2 {
+  font-size: 1.5rem;
+}

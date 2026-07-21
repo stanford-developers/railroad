@@ -1,0 +1,1827 @@
+
+<html>
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<link href="../wp-content/uploads/local-fonts/google-fonts-local.css" rel="stylesheet"/>
+<meta content="IE=Edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="http://web.stanford.edu/group/chineserailroad/cgi-bin/wordpress/virtual/assets/og-image.png" property="og:image"/>
+<meta content="800" property="og:image:width"/>
+<meta content="800" property="og:image:height"/>
+<script src="js/vendor/jquery-3.2.1.min.js"></script>
+<title>Geography of Chinese Workers Building the Transcontinental Railroad</title>
+<style>
+body {
+  font: 300 15px/28px 'Merriweather', serif;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #004276;
+}
+
+.spacer
+{
+    width: 100%;
+}
+
+.article {
+  border-top: solid 1px #fff;
+}
+
+.section {
+  padding-top: 100px;
+}
+
+.section--last {
+  padding-bottom: 130px;
+}
+
+.section .text {
+  margin: auto 15%;
+  max-width: 1000px;
+}
+
+.section h3.text {
+  font: 700 36px/1.2em 'Merriweather', serif;
+  margin-bottom: 0px;
+}
+
+.section h4.text {
+  font: 300 18px/1.2em 'Merriweather', serif;
+  font-style: italic;
+  color: #999;
+  margin-bottom: 5px;
+}
+
+.section h5.text {
+  font: 300 12px 'Merriweather Sans', sans;
+  text-transform: uppercase;
+  color: #666;
+}
+
+.caption {
+  font: 300 13px 'Merriweather Sans', sans;
+  color: #999;
+  margin-top: 10px;
+}
+.title-page-photo-credit {
+  font: 300 13px 'Merriweather Sans', sans;
+  color: #FFF;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  opacity: .8;
+  text-align: right;
+}
+
+.upperright {
+  font: 300 14px 'Merriweather Sans', sans;
+    position: absolute;
+    top: -45px;
+    right: 0px;
+    text-align: right;
+}
+
+.bottomright {
+  font: 300 10px 'Merriweather Sans', sans;
+    position: absolute;
+    bottom: 10px;
+    right: 6px;
+    margin-top: -5em;
+    text-align: center;
+}
+.bottomright:hover {
+text-decoration: underline;
+}
+.additional-credits {
+  font-style: italic;
+  color: #999;
+  margin-top: 60px;
+  font-size: 0.9em;
+}
+
+@media (max-width: 859px) {
+  .section .text {
+    margin: auto 5%;
+    max-width: auto;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  body {
+    font-size: 22px;
+    line-height: 34px;
+  }
+
+  .section h4.text {
+    font-size: 24px;
+    text-align: center;
+    margin: 10px 30px;
+  }
+
+  .section h3.text {
+    font-size: 48px;
+    text-align: center;
+    margin: 10px 30px 30px 30px;
+  }
+}
+
+.map-section {
+  padding: 0;
+  left: 0;
+  width: 100%;
+}
+
+.map-overview {
+  background-color: #b9b6af;
+}
+
+.map-section svg {
+  overflow: hidden;
+}
+
+.map-road {
+  fill: none;
+  stroke: #000;
+  stroke-dasharray: 3,3;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+ stroke-width: 2px;
+}
+
+.map-road--story {
+  stroke: #f93;
+  stroke-opacity: .6;
+  stroke-width: 7px;
+}
+
+.map-road2 {
+  fill: none;
+  stroke: #000;
+    stroke-opacity: .5;
+  stroke-dasharray: 2,2;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  stroke-width: 1px;
+}
+
+.map-road--story2 {
+  stroke: #000;
+  stroke-opacity: .7;
+  stroke-width: 2px;
+}
+
+.map-key,
+.map-label {
+  font: 10px sans-serif;
+  text-anchor: middle;
+}
+
+.map-label {
+  fill: #666;
+}
+
+
+.map-chatter {
+  font-family: 300 'Merriweather Sans';
+  font-size: 27px;
+  text-shadow: 0 1px 0 #cac7be, 0 -1px 0 #cac7be, 1px 0 0 #cac7be, -1px 0 0 #cac7be;
+  text-anchor: middle;
+  text-align: center;
+}
+
+.ios .map-chatter {
+  font-size: 18px;
+}
+
+.map-label--road {
+  text-anchor: end;
+}
+
+.map-top .map-label {
+  cursor: pointer;
+  fill: #ccc;
+  text-shadow: 0 1px 0 #fff, 0 -1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff;
+  text-anchor: end;
+}
+
+.map-top .map-label circle {
+  fill: #fff;
+  stroke: #000;
+}
+
+.map-top .map-label--visited {
+  fill: #000;
+
+}
+
+.map-top .map-label--visiting {
+  font-weight: bold;
+
+}
+
+.map-top .map-label--visiting circle {
+  fill: #fff;
+      stroke: #000;
+  stroke-width: 2px;
+}
+
+.map-overview .map-label--road :first-child,
+.map-overview .map-label--road :last-child {
+  fill: #000;
+  font: bold 15px sans-serif;
+}
+
+.map-label--country {
+  font-style: oblique;
+  letter-spacing: 2px;
+}
+
+.map-label--country :last-child {
+  font-size: 13px;
+  opacity: 0.8;
+  font-weight: 200;
+}
+
+.map-key path {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+@media (max-width: 859px) {
+  .map-top {
+    display: none;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .map-label--country {
+    font-size: 17px;
+  }
+
+
+  .ios .map-chatter {
+    font-size: 27px;
+    fill-opacity: 1 !important;
+  }
+
+  .map-overview .map-label--road {
+    fill-opacity: 0;
+  }
+
+  .map-overview .map-label--road :first-child,
+  .map-overview .map-label--road :last-child {
+    fill-opacity: 1;
+    font-size: 25px;
+  }
+}
+.contour-image {
+  font: 300 13px/1.4em 'Merriweather Sans', sans-serif;
+  width: 1000px;
+  top: 0;
+  left: 15%;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+.contour-image img{
+  width: 1000px;
+}
+
+
+.contour-image-inner {
+  font: 300 13px/1.4em 'Merriweather Sans', sans-serif;
+  width: 1000px;
+  top: 20;
+  left: 0;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+.contour-image-inner img{
+  width: 1000px;
+}
+
+
+.float-image {
+  font: 300 10px 'Merriweather Sans', sans-serif;
+  top: 0;
+  left: 15%;
+  padding-bottom: 10px;
+  position: relative;
+  max-width: 1000px;
+}
+
+.inline-image {
+  font: 300 10px 'Merriweather Sans', sans-serif;
+  top: 0;
+  left: 0;
+  padding-bottom: 10px;
+  position: relative;
+  max-width: 1000px;
+}
+
+.right-image {
+  font: 300 10px 'Merriweather Sans', sans-serif;
+  top: 0;
+  left: 40px;
+  padding-bottom: 10px;
+  position: relative;
+  max-width: 500px;
+  float: right;
+}
+
+
+@font-face {
+  font-family: 'Merriweather', serif;
+  font-style: normal;
+  font-weight: 200;
+}
+@font-face {
+  font-family:   font: 13px/1.4em 'Merriweather Sans', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+}
+
+
+.easy-modal,
+	.easy-modal-animated {
+	width:100%;
+    height:100%;
+    display:none;
+    position:fixed;
+    top:0px;
+    left:0px;
+    background:rgba(0,0,0,0.75);
+}
+
+.easy-modal-inner {
+    max-width:1000px;
+    width:90%;
+    padding:40px;
+    position:fixed;
+    top:50%;
+    left:50%;
+    -webkit-transform:translate(-50%, -50%);
+    transform:translate(-50%, -50%);
+    box-shadow:0px 2px 6px rgba(0,0,0,1);
+    border-radius:3px;
+    background:#fff;
+}
+
+.indent {
+  padding-left: 20px ;
+  text-indent: -10px ;
+  font-size: 13px;
+  line-height: 1.6;
+  margin-top:6px;
+  margin-bottom:0px;
+}
+
+@import "lesshat.html";
+
+.ba-slider {
+    position: relative;
+    overflow: hidden;
+}
+ 
+.ba-slider img {
+    width: 100%;
+    display:block;
+    max-width:none;
+}
+ 
+.ba-slider .resize {
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    overflow: hidden;
+}
+
+
+.ba-slider .handle { /* Thin line seperator */
+  position:absolute; 
+  left:50%;
+  top:0;
+  bottom:0;
+  width:4px;
+  margin-left:-2px;
+ 
+  background: rgba(0,0,0,.5);
+  cursor: ew-resize;
+}
+ 
+.ba-slider .handle:after {  /* Big orange knob  */
+    position: absolute;
+    top: 50%;
+    width: 24px;
+    height: 24px;
+    margin: -12px 0 0 -12px;
+ 
+    content:'\276E  \276F';
+    color:black;
+    font-size:12px;
+    text-align:center;
+    line-height:23px;
+ 
+    background: #ffb800; /* @orange */
+    border:1px solid #e6a600; /* darken(@orange, 5%) */
+    border-radius: 50%;
+    transition:all 0.3s ease;
+    box-shadow:
+      0 1px 3px rgba(0,0,0,.3), 
+      inset 0 1px 0 rgba(255,255,255,.5),
+      inset 0 30px 25px -15px #ffd466; /* lighten(@orange, 20%)*/ 
+}
+
+.ba-slider .draggable:after {
+    width: 24px;
+    height: 24px;
+    margin: -12px 0 0 -12px;
+    line-height:24px;
+    font-size:15px;
+}
+
+.expander {
+  overflow: hidden; /* readmore will also enforce this, but belt + suspenders */
+}
+
+
+.sr-only {position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;}
+</style>
+<script>
+
+
+var pageHeight = /iPad|iPod|iPhone/.test(navigator.userAgent) ? function() {
+  var screenWidth,
+      screenHeight;
+  switch (orientation) {
+    case 90: case -90: screenWidth = screen.height, screenHeight = screen.availWidth; break;
+    default: screenWidth = screen.width, screenHeight = screen.availHeight; break;
+  }
+  return screenHeight / screenWidth * document.body.clientWidth;
+} : function() {
+  return window.innerHeight || document.documentElement.clientHeight;
+};
+
+</script>
+<script>(function() {
+
+var defers = [];
+defer = function(f) { defers.push(f); };
+await = function() { defers.forEach(function(f) { f(); }); };
+
+})();</script>
+<!--[if lte IE 8]><body class="ie8"><![endif]-->
+<!--[if IE 9]><body class="ie9"><![endif]-->
+<style>
+
+.navigation {
+  position: fixed;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  height: 35px;
+  background: #000;
+  z-index: 200;
+  padding-top: 12px;
+}
+
+.ios .navigation {
+  position: absolute;
+}
+
+.navigation-logo {
+  float: left;
+  height: 17px;
+  margin: 11px 0 0 30px;
+  width: 128px;
+}
+
+.navigation-title {
+  color: #e2e2e2;
+  font: 300 13px/20px 'Merriweather', georgia, serif;
+  height: 20px;
+  letter-spacing: 1px;
+  margin: 11px 2px 0 5px;
+  padding-left: 15px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.navigation-title:hover {
+  text-decoration: underline;
+}
+
+.navigation-share {
+  position: absolute;
+  right: 2%;
+}
+
+.navigation-share a {
+  display: inline-block;
+  padding: 11px 5px;
+}
+
+blockquote {
+  	font: 300 16px 'Merriweather', georgia, serif;
+	font-style: italic;
+	width: 900px;
+	margin: 0.25em 0;
+	padding: 0.25em 40px;
+	line-height: 1.45;
+	position: relative;
+	color: #383838;
+}
+
+.navigation-share-icon {
+  width: 18px;
+  height: 18px;
+}
+
+.navigation-share-twitter .navigation-share-icon { background-position: -6px -28px; }
+.navigation-share-twitter:hover .navigation-share-icon { background-position: -6px -48px; }
+.navigation-share-facebook .navigation-share-icon { background-position: -26px -28px; }
+.navigation-share-facebook:hover .navigation-share-icon { background-position: -26px -48px; }
+.navigation-share-email .navigation-share-icon { background-position: -28px -68px; width: 22px; }
+.navigation-share-email:hover .navigation-share-icon { background-position: -5px -68px; }
+
+@media screen and (max-device-width: 320px) and (orientation: portrait) {
+  .navigation {
+    height: 60px;
+    font-size: 3em;
+    background-color: rgba(0,0,0,0.3);
+  }
+
+  .navigation-share,
+  .navigation-title {
+    display: none;
+  }
+
+  .navigation-logo {
+    margin: 0 auto;
+    text-align: center;
+    float: none;
+    display: block;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 260px;
+    height: 100%;
+  }
+}
+
+</style>
+</head>
+<body>
+<h1 class="sr-only">Geography of Chinese Workers Building the Transcontinental Railroad</h1>
+<div class="navigation">
+<a class="navigation-title" href="http://chineserailroadworkers.stanford.edu/">Chinese Railroad Workers in North America Project</a>
+</div>
+<div class="main">
+<style>
+  
+  
+  .head-section {
+    font: 700 40px 'Merriweather', sans serif;
+    text-shadow: 0 1px 0 #000;
+    padding: 0;
+    background-color: #111;
+    background-image: url(assets/header.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    text-align: center;
+    
+  }
+  
+  .head-section-names {
+    font: 700 40px 'Merriweather', sans serif;
+    position: relative;
+  }
+  
+  .head--text {
+	padding-top: 50px;
+    color: white;
+    text-align: center;
+    width: 100%;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, .8);
+  }
+  
+  .head-summary {
+    font-size: 25px;
+    font-style: italic;
+    max-width: 640px;
+    margin: 5px auto 15px;
+  }
+  
+  .head-by {
+    font:  200 13px/1.4em 'Merriweather Sans', sans-serif;
+    margin-top: 11px;
+    opacity: 0.8;
+  }
+  
+  .head-by-main {
+    font:  100 13px/1.4em 'Merriweather Sans', sans-serif;
+    font-size: 12px;
+    opacity: 1;
+  }
+  
+  .head-by-author {
+    font:  300 15px/1.4em 'Merriweather', serif;
+  }
+  
+  
+  .column_container {
+		width: 100%;
+		height: 100%;
+		margin-bottom: 20px;
+	}
+  
+  .left-column {
+    float: left;
+    border: 1px;
+    width: 30%;
+    margin-left:20%;
+	}
+
+	.right-column {
+    float: left;
+    width: 30%;
+    display: block;
+    margin-right:20%;
+}
+  
+  @media screen and (max-device-width: 320px) and (orientation: portrait) {
+    .head-section {
+      font-size: 70px;
+    }
+  
+    .head--text {
+      bottom: 40px;
+    }
+  
+    .head-summary {
+      font-size: 40px;
+      width: 80%;
+      margin: 10px auto;
+    }
+  
+    .head-by-main {
+      font-size: 30px;
+      opacity: 1;
+    }
+  
+    .head-by {
+     font-family:  300 13px/1.4em 'Merriweather Sans', sans-serif;
+      font-size: 25px;
+      width: 70%;
+      margin: 10px auto 0;
+    }
+
+    
+  }
+  
+ </style>
+<div class="head-section" style="height: 238px;text-align:center;padding-top:100px;">
+<div class="text head--text" style="background-color:rgba(0, 0, 0, 0.5);padding:50px;width:600px;display:block;margin-left:auto;margin-right:auto;">
+     Geography of Chinese Workers Building <br/>the Transcontinental Railroad
+      <div class="head-summary">A virtual reconstruction of the key historic sites</div>
+<div class="head-by head-by-main"><br/>Chinese Railroad Workers in North America Project</div>
+<div class="head-by head-by-main">Co-Directors:<br/><div class="head-by-author">Gordon H. Chang and Shelley Fisher Fishkin</div></div>
+<div class="head-by head-by-main">Lead Writer:<br/><span class="head-by-author">Hilton Obenzinger</span></div>
+<div class="head-by head-by-main"><br/>Center for Spatial and Textual Analysis (CESTA)</div>
+<div class='column_container"'><div class="left-column">
+<div class="head-by head-by-main">Project Manager:<br/><span class="head-by-author">Gabriel Wolfenstein</span></div>
+<div class="head-by head-by-main">Creative Director:<br/><span class="head-by-author">Erik Steiner</span></div></div><div class="right-column">
+<div class="head-by head-by-main">Lead Designer:<br/><span class="head-by-author">Stephanie Niu</span></div>
+<div class="head-by head-by-main">Design and Programming:<br/><span class="head-by-author">Leo Barleta<br/>Yue Li</span></div></div>
+<div><br/></div></div>
+<div class="head-by">-<div class="head-by head-by-main">©2018 Chinese Railroad Workers in North America Project at Stanford University. All Rights Reserved.</div></div>
+</div>
+<div class="title-page-photo-credit"><i>Title page:</i><br/>"Across the continent, the Frank Leslie transcontinental excursion,<br/>the excursion train rounding Cape Horn at the head of the great<br/>American canyon, with a view of the South Fork of the American<br/>River, where gold was first discovered in 1848," Horace<br/>Baker, engraver. "Frank Leslie Illustrated Newspaper,"<br/>April 27, 1878. Courtesy of UC Berkeley, Bancroft Library. [<a href="http://content.cdlib.org/ark:/13030/tf6000106f/?layout=metadata" style=" color:#fff;">link</a>]</div>
+</div>
+<script>(function() {
+  
+  var sectionNode = document.querySelector(".head-section");
+  
+  resized();
+  
+  function resized() {
+    sectionNode.style.height = pageHeight() + "px";
+  }
+  
+  defer(function() {
+    d3.select(window)
+        .on("resize.head", resized)
+        .call(resized);
+  });
+  
+  })()</script>
+<div class="section map-section map-overview" data-height="1" data-zoom-end="0.6" data-zoom-start="0" style="height: 238px;"></div>
+<div class="section">
+<div class="float-image">
+<div><img alt="Fiftieth anniversary Golden Spike ceremony" src="assets/50th_anniversary.jpg"/></div>
+<div class="caption">Ging Cui, Wong Fook, and Lee Shao, three of the eight Chinese workers who put the last rail in place, on a float at the 50th Anniversary celebration of the completion of the transcontinental railroad in Ogden, Utah. Photo by courtesy of Amon Carter Museum of American Art Archives, Fort Worth, TX [<a href="http://ucsdnews.ucsd.edu/pressrelease/geisel_library_exhibit_sheds_light_on_chinese_workers_who_built_transcontin">link</a>]</div>
+</div>
+<h2 class="text">Introduction</h2>
+<div class="text" style="padding-bottom: 50px">
+<p>Chinese workers were an essential part of building the Central Pacific Railroad (CPRR), the western section of the first transcontinental railroad across the United States.</p>
+<p>The Chinese numbered 10,000 to 15,000 during high points of construction of the CPRR; and they perhaps amounted up to 20,000 in total between 1865 and 1869, composing as much as 90 percent of the workforce for much of the construction. The eastern section of the line, built by the Union Pacific Railroad Company, required tracks laid across vast flat expanses of mid-western prairie, but the western portion of the line required tunneling through the imposing Sierra Nevada mountains – blasting and digging cuts through deep rock, carving out 15 tunnels through solid granite in high altitudes, dumping large quantities of dirt and rubble to create fills, constructing trestles across deep canyons, building retaining walls. The terrain was a bit easier once they reached the high desert of Nevada and Utah, but there they had to contend with extreme heat, long supply lines, and the breakneck speed of construction.</p>
+<p>This was the largest engineering project of the time, crucial for developing the American West and connecting the United States across the continent. But there is no extant letter, diary, or memoir by the Chinese workers themselves. Historians have only been able to fashion what we know about the Chinese workers through the eyes of others, such as reports and letters to company and government officials by managers and engineers and their memoirs, along with accounts by journalists and travel writers.</p>
+<p>Today we can also draw upon artifacts of material culture uncovered by archaeologists, oral histories of descendants of the workers, and the ability of digital resources to bring together all the texts and other evidence for insights. We can now comprehend in new ways the immense engineering challenges and extreme geologic and meteorological conditions the Chinese workers faced.</p>
+<p>In this visualization, we briefly recount the story of the Chinese workers in the context of engrossing topographic contour maps. We also include a few of the photographs taken by Alfred A. Hart, the official photographer for the CPRR, and others, to convey how the Sierra Nevada summit or the Nevada desert looked – and felt. This is an introduction, a way to begin to convey a bit of what the Chinese workers encountered and what they achieved.</p>
+</div>
+</div>
+<div class="section map-section map-top" id="scrolling_map"></div>
+<div class="toggle"><div class="toggle_text">Overview Map</div><div><label class="switch"><input onclick="hideshow()" type="checkbox"/><span class="slider round"></span></label></div></div>
+</div>
+<div class="article" style="padding-top: 20%">
+<style>
+  
+  .map-container,
+  .head-container {
+    z-index: 101;
+  }
+  
+  
+  .map-top {
+    left: 0;
+    top: 0;
+    position: fixed;
+    z-index: 101;
+    width: 100%;
+    background-image: url(assets/CPR_map_shorter_profile.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+	}
+	
+	
+	
+	
+	/* The switch - the box around the view map slider */
+.switch {
+	margin-left:200px;
+  	width: 50px;
+  height: 28px;
+      right: 20;
+    position: fixed;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #D5DB8F;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #000;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #777777;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #D5DB8F;
+}
+
+input:checked + .slider:before {
+background-color: #777777;
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 20px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+	
+	
+  .toggle {
+  	height:28px;
+    right: 20;
+    top:0;
+    position: fixed;
+    z-index: 203;
+
+    
+    }
+ .toggle_text{
+  	margin-top:5px;
+  	margin-right:5px;
+    width:160px;
+    font:  300 14px/1.4em 'Merriweather Sans', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    text-decoration: none;
+        float: left;
+      color:white;
+   }
+
+  
+  .ios .map-top {
+    display: none;
+  }
+  
+  </style>
+<script>
+  
+  if (!/iPad|iPod|iPhone/.test(navigator.userAgent)) defer(function() {
+  
+  var width,
+      height,
+      nativeHeight = 1000,
+      scale,
+      y0,
+      y1;
+  
+  var y_map = d3.scale.linear()
+	  .range([0, .045, .078, .0875,.143,.155,.187,.445,.54, .628, .725,.975,  1]);
+	   // .range([0, .05,  .15, .095,.17, .202,.23, .48, .555,  .63, .74,.975, 1]);
+
+  var y_profile = d3.scale.linear()
+      .range([0, .05,  .09, .095,.17,.202,.23, .48, .555,  .63, .735,.975, 1]);
+  
+  
+  var resizeTimeout,
+      render1 = function() {};
+      render2 = function() {};
+  
+  var path1 = d3.geo.path()
+      .projection(d3.geo.transform({point: function(x, y) { this.stream.point(x * scale, y * scale);
+           }}));
+           
+  var path2 = d3.geo.path()
+      .projection(d3.geo.transform({point: function(x, y) { this.stream.point(x * scale, y * scale);
+           }}));
+  
+  var section = d3.select(".map-top");
+  
+  var toggle_section = d3.select(".toggle");
+  
+  var svg = section.append("svg");
+  
+  var g = svg.append("g");
+  
+  var h = svg.append("g");
+  
+  
+  var marker1 = d3.selectAll([]);
+   var marker2 = d3.selectAll([]);
+  
+  var article = d3.select(".article");
+  
+  
+  d3.select(window)
+      .on("resize.map-top", resized)
+      .on("load.map-top", resized)
+      .call(resized);
+  
+  function resized() {
+    clearTimeout(resizeTimeout);
+    resizeTimeout = setTimeout(afterresized, 10);
+  }
+  
+  function afterresized() {
+    width = document.body.clientWidth;
+    height = document.body.clientWidth;
+	scale = document.body.clientWidth/1000;
+    y0 = article.node().offsetTop;
+    y1 = y0 + article.node().offsetHeight - innerHeight;
+  
+    svg
+        .attr("width", width)
+        .attr("height", height*.233);
+  
+    g
+        .attr("transform", "translate(" + (width / 2) + "," + (height / 2) + ")");
+       
+       
+	h
+        .attr("transform", "translate(" + (width / 2) + "," + (height / 2) + ")");
+
+
+    y_map
+        .domain(marker1
+          .each(function(d) { d.properties.position = this.offsetTop; })
+          .data().map(function(d) { return d.properties.position; }));
+          
+    y_profile
+        .domain(marker2
+          .each(function(d) { d.properties.position = this.offsetTop; })
+          .data().map(function(d) { return d.properties.position; }));
+  
+    render2();
+    render1();
+  }
+  
+  d3.json("./assets/cpr_rotated_shorter.json", function(error, topo) {
+    var road = topojson.feature(topo, topo.objects.road),
+        roadLength = length(road.geometry.coordinates),
+        cities = topojson.feature(topo, topo.objects.cities).features;
+        
+  
+    marker1 = d3.selectAll(".map-marker1")
+        .data(cities, function(d) { return d ? d.properties.name : this.getAttribute("data-key"); })
+        .each(function(d, i) { d.properties.position = this.offsetTop; d.properties.top = y_map.range()[i]; });
+  
+    //y_map.domain(cities.map(function(d) { return d.properties.position; }));
+  
+    g.append("path")
+        .datum(road)
+        .attr("class", "map-road");
+  
+    var feature = g.append("path")
+        .datum(road)
+        .attr("class", "map-road map-road--story");
+  
+    var label = g.append("g")
+        .attr("class", "map-label map-label--road")
+      .selectAll("g")
+        .data(cities)
+      .enter().append("g")
+        .on("click", clicked1);
+  
+    label.append("circle")
+        .attr("r", 4);
+  
+ //label.append("text")
+  //   .attr("dy", ".35em")
+   //   .attr("x", -10)
+    //   .text(function(d) { return d.properties.name; });
+  
+    
+    render1 = function() {
+      g.selectAll("path").attr("d", path1);
+      label.attr("transform", function(d) { d = d.geometry.coordinates; return "translate(" + d[0] * scale + "," + d[1] * scale + ")"; });
+      scrolled1();
+    };
+    
+    
+  
+    d3.select(window)
+        .on("scroll.map-top", scrolled1)
+        .call(render1);
+  
+    function scrolled1() {
+
+      var top = y_map(pageYOffset+width/4), maxTop = 0;
+  
+      section
+          .style("top", pageYOffset > y1 ? y1 - pageYOffset + "px" : pageYOffset < y0 ? y0 - pageYOffset + "px" : null);
+          
+      toggle_section
+          //.style("top", pageYOffset > y1 ? y1 - pageYOffset + "px" : pageYOffset < y0 ? y0 - pageYOffset + "px" : null);
+          // .style("top", pageYOffset > y1 ? y1 - pageYOffset+30 + "px" : pageYOffset < y0 ? y0 - pageYOffset+width/4-20 + "px" : top+width/4-20+"px");
+           .style("top", pageYOffset > y1 ? y1 - pageYOffset+30 + "px" : pageYOffset < y0 ? 2000 + "px" : 10+"px");
+           //.style("top", top+"px");
+  
+      feature
+          .style("stroke-dasharray", top * roadLength * scale + "," + roadLength * scale);
+  
+      label
+          .classed("map-label--visited", function(d) { var t = d.properties.top; if (t < top) { if (t > maxTop) maxTop = t; return true; }})
+          .classed("map-label--visiting", function(d) { return d.properties.top === maxTop; });
+    }
+  
+    function clicked1(d, i) {
+        console.log(d.properties.position)
+        console.log(pageYOffset)
+      d3.transition()
+          .duration(750)
+          .tween("scroll", function() {
+            var offset = d3.interpolateNumber(pageYOffset, d.properties.position + (i ? 40 : 0));
+            return function(t) { scrollTo(0, -width/4.5+offset(t)); };
+          });
+    }
+  });
+  
+  
+    d3.json("./assets/profile_rotated_shorter.json", function(error, topo) {
+    var road = topojson.feature(topo, topo.objects.road),
+        profileLength = length(road.geometry.coordinates),
+        profile_cities = topojson.feature(topo, topo.objects.cities).features;
+        
+  
+    marker2 = d3.selectAll(".map-marker2")
+        .data(profile_cities, function(d) { return d ? d.properties.name : this.getAttribute("data-key"); })
+        .each(function(d, i) { d.properties.position = this.offsetTop; d.properties.top = y_profile.range()[i]; });
+  
+    //y_map.domain(cities.map(function(d) { return d.properties.position; }));
+  
+    h.append("path")
+        .datum(road)
+        .attr("class", "map-road2");
+  
+    var feature2 = h.append("path")
+        .datum(road)
+        .attr("class", "map-road map-road--story2");
+  
+    var label2 = h.append("g")
+        .attr("class", "map-label map-label--road2")
+        .selectAll("g")
+        .data(profile_cities)
+        .enter().append("g")
+        .on("click", clicked2);
+  
+    label2.append("circle")
+        .attr("r", 4);
+  
+ //label.append("text")
+   //  .attr("dy", ".35em")
+     //  .attr("x", -10)
+      // .text(function(d) { return d.properties.name; });
+  
+    render2 = function() {
+      h.selectAll("path").attr("d", path2);
+      label2.attr("transform", function(d) { d = d.geometry.coordinates; return "translate(" + d[0] * scale + "," + d[1] * scale + ")"; });
+      scrolled2();
+    };
+  
+  
+  
+    d3.select(window)
+        .on("scroll.section", scrolled2)
+        .call(render2);
+  
+    function scrolled2() {
+      var top = y_profile(pageYOffset+width/4), maxTop = 0;
+  
+      section
+          .style("top", pageYOffset > y1 ? y1 - pageYOffset + "px" : pageYOffset < y0 ? y0 - pageYOffset + "px" : null);
+
+      feature2
+          .style("stroke-dasharray", top * profileLength * scale + "," + profileLength * scale);
+  
+      label2
+          .classed("map-label--visited", function(d) { var t = d.properties.top; if (t < top) { if (t > maxTop) maxTop = t; return true; }})
+          .classed("map-label--visiting", function(d) { return d.properties.top === maxTop; });
+    }
+  
+    function clicked2(d, i) {
+       console.log(d.properties.position)
+      console.log(pageYOffset)
+      d3.transition()
+          .duration(750)
+          .tween("scroll", function() {
+            var offset = d3.interpolateNumber(pageYOffset, d.properties.position + (i ? 40 : 0));
+            return function(t) { scrollTo(0, -width/4.5+offset(t)); };
+          });
+    }
+  });
+  
+  
+  function length(line) {
+    var i = 0,
+        n = line.length,
+        p0,
+        p1 = line[0],
+        length = 0,
+        dx,
+        dy;
+  
+    while (++i < n) {
+      p0 = p1;
+      p1 = line[i];
+      dx = p1[0] - p0[0];
+      dy = p1[1] - p0[1];
+      length += Math.sqrt(dx * dx + dy * dy);
+    }
+  
+    return length;
+  }
+  
+  });
+  
+ 
+  
+  
+  
+//  <font style="color: #000"><b>view</b></font>
+  
+  </script>
+<a class="map-marker1" data-key="Sacramento"></a>
+<a class="map-marker2" data-key="Sacramento"></a>
+<div class="section">
+<h3 class="text">January 8, 1863</h3>
+<h2 class="text">Sacramento</h2>
+<h3 class="text">Breaking Ground</h3>
+<div class="contour-image">
+<div class="upperright"><b>Elevation</b><br/>32 feet<br/>10 meters</div>
+<div class="expander"><img alt="Map of the Sacramento groundbreaking site" src="assets/sacramento_virtual.png"/><a href="https://earth.google.com/web/@38.58531627,-121.49339524,9.9274088a,3437.3195702d,35y,42.02726788h,73.82433707t,0.00000085r"><div class="bottomright">View in<br/>Google Earth</div></a></div>
+<div class="caption"></div>
+</div>
+<div class="text">
+<p>Ground was broken in Sacramento at Front and K Street on January 8, 1863 to begin construction of the Central Pacific Railroad, the western link of the first transcontinental railroad. The Central Pacific Railroad (CPRR) would extend east from Sacramento across the Sierras and Nevada to meet the Union Pacific Railroad (UPRR) that stretched west through the plains from Council Bluffs, Iowa, and Omaha, Nebraska.</p>
+<p>At the start of construction the Central Pacific Railroad had no plans to hire Chinese workers. Leland Stanford, president of the railroad, had been elected governor on a program opposing Chinese immigration, calling the Chinese “the dregs” of Asia and declaring to the state legislature a year earlier, “The presence of numbers of that degraded and distinct people [Chinese] would exercise a deleterious effect upon the superior race.”<sup>1</sup></p>
+<p>The CPRR first tried to use Irish immigrant and other white workers, but the labor supply was scarce. In January 1865, James Strobridge, the CPRR construction supervisor, advertised in the <em>Sacramento Union</em> and distributed handbills throughout the state, calling for “5000 laborers for constant and permanent work; also experienced foremen.”<sup>2</sup> Only a few hundred came, far short of their goal, and as Charles Crocker, the manager who oversaw construction, later recalled, the workforce “never went much above 800 white laborers with the shovel and the pick.” While the demand for labor increased, white workers were reluctant to do such backbreaking, hazardous work, and they had better prospects in the booming Nevada silver mines. In Strobridge’s estimation, the white workers were “unsteady men and unreliable. Some of them would stay a few days, and some would not go to work at all. Some would stay a few days, get drunk, and clear out.”<sup>3</sup> As Leland Stanford reported, “Most of the men working on the road were merely working for a stake. When they got that, they would go off to the mines, and we could not hold them, except in rare instances, more than a very little while.”<sup>4</sup></p>
+<p>—</p>
+<p class="indent"><sup>1</sup> Leland Stanford, Inaugural Address, 1862. <a href="http://governors.library.ca.gov/addresses/08-Stanford.html">http://governors.library.ca.gov/addresses/08-Stanford.html</a></p>
+<p class="indent"><sup>2</sup> <em>Sacramento Daily Union</em>, Jan. 7, 1865.</p>
+<p class="indent"><sup>3</sup> James H Strobridge, testimony taken by United States Congress, Senate. <em>Report of the Joint Special Committee to Investigate Chinese Immigration. </em>February 27, 1877. 44<sup>th</sup> Congress, 2<sup>nd</sup> Session, Senate Report 689 (Washington, D.C.: GPO, 1877), 723.</p>
+<p class="indent"><sup>4</sup> Leland Stanford, testimony taken by the United States Pacific Railway Commission, 1887 Report, Volume V. <a href="http://ia601403.us.archive.org/6/items/reportofunitedst05unitrich/reportofunitedst05unitrich_djvu.txt">http://ia601403.us.archive.org/6/items/reportofunitedst05unitrich/reportofunitedst05unitrich_djvu.txt</a></p>
+</div>
+</div>
+<a class="map-marker1" data-key="Bloomer Cut"></a>
+<a class="map-marker2" data-key="Bloomer Cut"></a>
+<div class="section">
+<h3 class="text">First major engineering challenge</h3>
+<h2 class="text">Bloomer Cut</h2>
+<div class="contour-image">
+<div class="upperright"><b>Elevation</b><br/>1253 feet<br/>382 meters</div>
+<div class="expander"><img alt="Map of Bloomer Cut" src="assets/bloomer_cut_virtual.png"/><a href="https://earth.google.com/web/@38.88355723,-121.09301151,371.73315923a,422.51159743d,35y,88.76737751h,74.77470663t,-0r"><div class="bottomright">View in<br/>Google Earth</div></a></div>
+<div class="caption"></div>
+</div>
+<div class="text">
+<p>In early 1864 workers began blasting and digging through steep terrain on the Bloomer Ranch near Auburn to create a level grade for tracks. Bloomer Cut, 38 miles/61 kilometers from Sacramento, ended up being 800 feet/243 meters long and 63 feet/19.2 meters high, and workers dug a trough through naturally cemented gravel and hard clay with picks, shovels and black powder.<sup>1</sup> This was the first major engineering challenge for the railroad, and it was dangerous work. At least some Chinese may have worked at Bloomer Cut by the time it was completed in March 1865.</p>
+<div class="right-image">
+<div class="ba-slider">
+<img alt="Historic view of Bloomer Cut" src="assets/bloomer_cut_jesse_white.jpg">
+<div class="resize">
+<img alt="Bloomer Cut railroad construction scene" src="assets/bloomer_cut_.jpg">
+</img></div>
+<span class="handle"></span>
+</img></div>
+<div class="caption"><b><i>Drag slider to compare photos of Bloomer Cut from 1869 and 2009</i></b><br/>“Bloomer Cut 63 Feet High Looking West.” # 12, Photograph. Courtesy of The Alfred A. Hart Photo Collection, Special Collections, Stanford University [<a href="https://searchworks.stanford.edu/view/nc100yv0489">link</a>]; "Bloomer Cut Looking West." Jesse White. The Alfred A. Hart Photo Project. Courtesy of the Spatial History Project, Stanford University.]</div>
+</div>
+<p>By July 1865, the Chinese workforce was nearly 4,000. During 1866, approximately 8,000 Chinese worked on the construction of tunnels and 3000 were grading and doing other work, representing ninety percent of the workforce.<sup>2</sup> Leland Stanford wrote to President Johnson that he expected 15,000 Chinese workers by 1866: “A large majority of the white laboring class on the Pacific Coast find most profitable and congenial employment in mining and agricultural pursuits, than in railroad work. The greater portion of the laborers employed by us are Chinese, who constitute a large element of the population of California. Without them it would be impossible to complete the western portion of this great national enterprise, within the time required by the Acts of Congress.” <sup>3</sup></p>
+<p>Railroad workers recruited by labor contractors came mostly from the Pearl River Delta area of Guangdong (Canton) province, especially Siyi (四邑Sze Yap, meaning four counties: Taishan台山, Kaiping开平, Xinhui新会 and Enping恩). These counties suffered from extreme poverty, ethnic conflict, and civil unrest, and the area was close to Hong Kong, Macao and Guangzhou (Canton) as points of departure. Desperate for employment, workers from this part of Guangdong boarded ships for California and other parts to support their families.</p>
+<p>—</p>
+<p class="indent"><sup>1</sup> Samuel Montague quoted in George Kraus, George Kraus, <em>High Road to Promontory: Building the Central Pacific across the High Sierra</em> (Palo Alto: American West, 1969), 90.</p>
+<p class="indent"><sup>2</sup> Wesley Griswold, <em>A Work of Giants: Building the First Transcontinental Railroad</em> (New York: McGraw-Hill, 1962), 144-145; one scholar extrapolates from different records that the number of Chinese working on the railroad during the course of construction could have been as high as 20,000. William F. Chew, <em>Nameless Builders of the Transcontinental Railroad: The Chinese Workers of the Central Pacific Railroad</em> (Bloomington, IN: Trafford, 2003), 40-45.</p>
+<p class="indent"><sup>3</sup> Leland Stanford, “Statement Made to the President of the United States, and Secretary of the Interior, of Progress of the Work” (Sacramento: H. S. Crocker &amp; Co., 1865).</p>
+</div>
+</div>
+<a class="map-marker1" data-key="Cape Horn"></a>
+<a class="map-marker2" data-key="Cape Horn"></a>
+<div class="section">
+<h3 class="text">Suspended from above</h3>
+<h2 class="text">Cape Horn</h2>
+<div class="contour-image">
+<div class="upperright"><b>Elevation</b><br/>2560 feet<br/>780 meters</div>
+<div class="expander"><img alt="Map of Cape Horn" src="assets/cape_horn_virtual.png"/><a href="https://earth.google.com/web/@39.1132009,-120.93447467,784.43624397a,1276.40124386d,35y,-0.71846452h,74.01036548t,0r"><div class="bottomright">View in<br/>Google Earth</div></a></div>
+<div class="caption"></div>
+</div>
+<div class="text">
+<div class="right-image">
+<div class="ba-slider">
+<img alt="Li Ju photograph of Cape Horn" src="assets/liju_capehorn.png">
+<div class="resize">
+<img alt="Historic photograph of Cape Horn" src="assets/hart_capehorn.png">
+</img></div>
+<span class="handle"></span>
+</img></div>
+<div class="caption"><b><i>Drag slider to compare photos of Cape Horn from 1869 and 2016</i></b><br/>“Excursion Train At Cape Horn 3 Miles Above Colfax.” # 57, Photograph. Courtesy of The Alfred A. Hart Photo Collection, Special Collections, Stanford University. [<a href="https://searchworks.stanford.edu/view/gk429bc7641">link</a>]; “Excursion Train at Cape Horn.” Photograph. Courtesy of Li Ju (2016).</div>
+</div>
+<p>In the summer of 1865 the railroad builders faced one of their biggest challenges, a roadbed curving around a mountain high in the Sierra Nevada, named Cape Horn (Mile 57/Kilometer 91.7) after the treacherous route for ships sailing around the tip of South America. The site was “a precipitous, rocky bluff” about 1200 feet high above the American River east of Colfax, California.</p>
+<p>It took the mostly Chinese workforce a year to blast out a three-mile/four-kilometer roadbed curving along steep terrain high above the North Fork of the American River. The roadbed was to be a ledge that snaked around the rock and the task required grading, leveling and clearing trees, stumps, rocks and other obstructions along a slope of “about seventy-five degrees, or nearly perpendicular,” as Chief Engineer Samuel Montague describes the site.<sup>1</sup> Hundreds of kegs of black blasting powder were used to form a ledge from which a level roadbed could be graded and tracks laid.</p>
+<p>There are conflicting accounts of how the work was carried out. Many published reports tell of Chinese workers hanging over sheer precipices in woven straw baskets to chip away rock and drill holes for explosives. Once they would light the fuse, they would signal to be quickly drawn up to avoid the blast, a very risky operation, and the accounts explain that many would lose their lives if the baskets or ropes were not drawn up quickly enough. But the slope at Cape Horn was not a sheer cliff. Many believe that laboring in baskets could have actually hindered their task, since a worker would not be able to use his feet to maneuver.<sup>2</sup> An article in <em>The Overland Monthly </em>in 1869 describes how workers “were suspended by ropes from above, the chain-bearers signaling to those holding the ropes, up and down, forward or back” to prepare for drilling and blasting. Workers hung by ropes tied around their waist; or they leaned against bosun’s chairs. Yet another newspaper reports that at one site “the slope is so steep that Chinamen who did the work were let down in baskets, and in this position drilled holes and charged them in side of the mountains,” but this report does not specify that this took place at Cape Horn.<sup>3</sup></p>
+<p>The image of Chinese laborers hanging from baskets to do such hazardous work has appeared in many graphic images, literary representations, and histories, and this image became the stuff of legends. Whether hanging from ropes or baskets, Chinese workers undertook an arduous and dangerous task of exploding and cutting through steep terrain at Cape Horn and other sites along the railroad.</p>
+<p>—</p>
+<p class="indent"><sup>1</sup> Samuel S. Montague, <em>Report of the Chief Engineer Upon Recent Surveys, and Progress of Construction of the Central Pacific Railroad of California, October 8, 1864</em>, 13.</p>
+<p class="indent"><sup>2</sup> An early description of Chinese workers hanging in baskets at Cape Horn appears in Isabella Bird, <em>A Lady’s Life in the Rocky Mountains</em> (New York: Putnam, 1879−1880), 5. Such a description also appears in <em>Nelson’s Pictorial Guidebook: The Central Pacific Railroad: A Trip across the North American Continent from Ogden to San Francisco</em> (New York: T. Nelson &amp; Sons, 1870), 83. An anonymous eyewitness account published in 1868 and reprinted in 1869 in several newspapers around the country describes a dramatic incident involving “Chinamen who did the work” being “let down in baskets” to place explosive charges (the precise location of the scene described is not mentioned): “Wholesale Blasting,” <em>Providence </em>(RI) <em>Evening Press</em>, December 14, 1868, 3; <em>Weekly Union</em> (Manchester, NH), January 19, 1869, 1; <em>Bangor </em>(ME) <em>Daily Whig and Courier,</em> February 11, 1869.</p>
+<p class="indent"><sup>3</sup> Early descriptions of workers hanging by ropes at Cape Horn appear in Bill Dad, <em>Great Trans-Continental Railroad Guide</em> (Chicago: G. A. Crofutt, 1869), 202; Henry Morford, <em>Morford’s Scenery and Sensation Handbook of the Pacific Railroads and California</em> (New York: Chas. T. Dillingham, 1878), 163−165; William Mintern, <em>Travels West</em> (London: Samuel Tinsley, 1877), 277; and Anonymous, <em>Adams &amp; Bishop’s Illustrated Trans-Continental Guide:</em> <em>The Pacific Tourist </em>(New York: Adams &amp; Bishop, 1884), 252.</p>
+<p> </p>
+</div>
+</div>
+<a class="map-marker1" data-key="Dutch Flat"></a>
+<a class="map-marker2" data-key="Dutch Flat"></a>
+<div class="section">
+<h3 class="text">Preparing a supply road</h3>
+<h2 class="text">Dutch Flat - Donner Lake Wagon Road</h2>
+<div class="contour-image">
+<div class="upperright"><b>Elevation</b><br/>3144-5935 ft<br/>958-1809 m</div>
+<div class="expander"><img alt="Map of Dutch Flat and Donner Lake Wagon Road" src="assets/dutch_flat_virtual.png"/><a href="https://earth.google.com/web/@39.20418065,-120.80518507,1102.26096667a,1498.80829553d,35y,95.37999541h,75.37494649t,-0r"><div class="bottomright">View in<br/>Google Earth</div></a></div>
+<div class="caption"></div>
+</div>
+<div class="text">
+<div class="right-image">
+<div><img alt="Historic view near Dutch Flat" src="assets/dutch_flat.jpg"/></div>
+<div class="caption">“Dutch Flat Placer County 67 Miles From Sacramento.” # 63, Photograph. Courtesy of The Alfred A. Hart Photo Collection, Special Collections, Stanford University. [<a href="https://searchworks.stanford.edu/view/jh943nz3742">link</a>]</div>
+</div>
+<p>A few Chinese workers already in California had been part of the CPRR’s workforce before the decision was made to recruit so many more from California communities and even more from China. Payroll records for January 1864 showed that the Central Pacific had hired a crew of 23 Chinese workers with two supervising them, Hung Wah and Ah Toy, and the CPRR would hire more during that year.<sup>1</sup></p>
+<p>Chinese hired in 1864 also worked on the wagon road from Dutch Flat (Mile 67/Kilometer 107.8) to Donner Lake (Mile 117/Kilometer 188). This road was necessary in order to haul up supplies for grading the railroad bed and laying tracks. It also proved lucrative for the Central Pacific as the railroad collected tolls from freight wagons heading over the Sierra.</p>
+<p>—</p>
+<p class="indent"><sup>1</sup> William F. Chew, <em>Nameless Builders of the Transcontinental Railroad: The Chinese Workers of the Central Pacific Railroad</em> (Victoria, BC: Trafford), 2004, 37. Chew cites extant payroll records.</p>
+</div>
+</div>
+<a class="map-marker1" data-key="Summit Tunnel"></a>
+<a class="map-marker2" data-key="Summit Tunnel"></a>
+<div class="section">
+<h3 class="text">Blasting through solid granite</h3>
+<h2 class="text">Summit Tunnel</h2>
+<div class="contour-image">
+<div class="upperright"><b>Elevation</b><br/>6931 feet<br/>2112 meters</div>
+<div class="expander"><img alt="Map of Summit Tunnel" src="assets/summit_tunnel_virtual.png"/><a href="https://earth.google.com/web/@39.31496562,-120.31351555,2025.92790203a,1777.69387235d,35y,-91.3751818h,72.22106235t,0r"><div class="bottomright">View in<br/>Google Earth</div></a></div>
+<div class="caption"></div>
+</div>
+<div class="text">
+<p>In fall 1865 Chinese workers embarked on the most daunting of all the challenges they faced on the Central Pacific:  digging 15 tunnels, most of them at high elevations, through the Sierra Nevada, for a total of 6,213 feet/1894 meters.</p>
+<div class="right-image">
+<div><img alt="Winter railroad construction in the Sierra Nevada" src="assets/winter.jpg"/></div>
+<div class="caption">“Summits Of Sierras 8000 To 10000 Feet Altitude.” # 187, Photograph. Courtesy of The Alfred A. Hart Photo Collection, Special Collections, Stanford University. [<a href="https://searchworks.stanford.edu/view/vn185vx6143">link</a>]</div>
+</div>
+<p>The most difficult was No. 6, the Summit Tunnel (Mile 105.5/Kilometer 170), cut through solid granite, 1,695 feet/517 meters long and 124 feet/38 meters below the mountain’s surface.<sup>1</sup> Progress was agonizingly slow, with many kegs of black powder used each day, but to little effect in the hard rock. In an unusual move, a chemist mixed the recently developed explosive, nitroglycerine, on site, but it was very unstable and dangerous, and the risk of accidental explosions always remained high. Soon after Tunnel No. 6, the Summit Tunnel, the CPRR abandoned the use of nitroglycerine.</p>
+<p>Crews dug at both the east and west face of the Summit Tunnel, but progress was still too slow for Charles Crocker. In order to move the work more quickly, a stripped down locomotive was hauled to the top of the tunnel and work gangs set about sinking a vertical shaft 73 feet/22 meters down into the center of the tunnel. Workers were let down into the tunnel and lifted out through the central shaft, and the debris was hauled out with buckets raised by the locomotive’s steam engine. Now work could proceed in four directions, at both the east and west faces, and inside out.</p>
+<p>Always wanting to make quicker progress, Charles Crocker decided that faster, more experienced workers were needed for tunneling out from the center of the shaft. According to his account, the Central Pacific offered extra wages for Cornish miners to do the work, recruiting them from the Nevada silver mines. Miners from Cornwall in southwest England had gained a reputation as being among the best miners in the world.</p>
+<p>Rather than putting the Cornish miners directly to the task, Crocker decided to set up a competition between them and the Chinese. He faced Chinese workers chipping away at the rock in one direction and the Cornish miners in the opposite direction. Setting up competitions, especially along ethnic or racial lines, was a typical management practice of this time; competition would help speed up the work, setting different groups of workers against each other.</p>
+<p>As Crocker described the results of this competition: “We measured the work every Sunday morning; and the Chinamen without fail always outmeasured the Cornish miners; that is to say, they would cut more rock in a week than the Cornish miners did, and there it was hard work, steady pounding on the rock, bone-labor.”<sup>2</sup></p>
+<div class="right-image">
+<div><img alt="Tunnel No. 8 construction scene" src="assets/tunnel_8.jpg"/></div>
+<div class="caption">“Heading Of East Portal Tunnel No 8 From Donner Lake Railroad.” # 204, Photograph. Courtesy of The Alfred A. Hart Photo Collection, Special Collections, Stanford University. [<a href="https://searchworks.stanford.edu/view/gv106fk5547">link</a>]</div>
+</div>
+<p>Work continued through two of the harshest winters on record. Forty-four storms were counted in one winter, and snow at the summit averaged 18 feet/5.5 meters with a total snowfall reaching over 40 feet/12 meters. Snow from fierce blizzards often blocked tunnel entrances, and the workers shoveled out tunnels through the snow, as much as 500 feet/152 meters long; they dug open windows, and they rested and ate in their white ice caves after spending their shifts in the dark of the mountain. Louis M. Clement, one of the company’s main engineers, recalled that “during the winter months there was constant danger from avalanches, and many laborers lost their lives.” “In many instances,” James Strobridge recalled, “our camps were carried away by snowslides, and men were buried and many of them were not found until the snow melted the next summer.” A. P. Partridge, who was on a bridge-building crew, also remembered the treacherous winters, and he too said about the Chinese workers that “a good many were frozen to death” in 1867. Twenty workers died in one avalanche, and individuals disappeared in smaller snow slides. Some frozen bodies were found in the spring with their shovels or picks still in their hands.<sup>3</sup></p>
+<p>The Summit Tunnel was completed, graded and track laid on November 30, 1867. Because of the severe winter storms, the Central Pacific built 37 miles/59.5 kilometers of snow sheds to cover the tracks in 1868 and 1869. Locomotive engineers complained that traveling through all the sheds was like “railroading in a barn.” Others nicknamed the snow sheds the “longest barn in the world.”<sup>4</sup></p>
+<p>—</p>
+<p class="indent"><sup>1</sup> John R. Gillis gives a detailed description of digging the Summit and other tunnels to the American Society of Engineers. Read John R. Gilliss [sic], Civil Engineer, Member of the Society, “Tunnels of the Pacific Railroad, A Paper Read Before the Society Jan. 5, 1870, in <em>Transactions, American Society of Engineers, </em>Vol. 1. Published by the Society, 1872, 155-172.</p>
+<p class="indent"><sup>2</sup> Charles Crocker, testimony, US Congress, <em>Report of the Joint Special Committee to Investigate Chinese Immigration, </em>February 27, 1877, 44th Congress, 2nd Session, Senate Report 689 (Washington, DC: US Government Printing Office, 1877), 667. For ethnic competition in industries in the West, see David R. Roediger and Elizabeth D. Esch, <em>The Production of Difference: Race and the Management of Labor in U.S. History</em> (New York: Oxford University Press, 2014).  </p>
+<p class="indent"><sup>3</sup> Gillis, 154-157, 158; for snow totals see Appendix C, 168; Gillis quoted in George Kraus, <em>High Road to Promontory: Building the Central Pacific (now the Southern Pacific) across the High Sierra</em> (Palo Alto, CA: American West Publishing Company, 1969), 145-148; David Haward Bain, <em>Empire Express: Building the First Transcontinental Railroad</em> (New York: Viking, 1999), 245, 246, 318; testimony of Lewis M. Clement, July 21, 1887, and James H. Strobridge, July 23, 1887, <em>United States Pacific Railway Commission</em>, vol. 5, 2577, 2580; “Reminiscences of A.P Partridge,” Lynn D. Farrar Collection, Central Pacific Railroad Photographic History Museum website, accessed May 30, 2017, <a href="http://cprr.org/Museum/Farrar/pictures/2005-03-09-01-08.html">http://cprr.org/Museum/Farrar/pictures/2005-03-09-01-08.html</a></p>
+<p class="indent"><sup>4</sup> Kraus 158-159; Arthur Brown, superintendent of bridges and buildings, quoted in Kraus 190-191; Wesley S. Griswold, <em>A Work of Giants: Building the First Transcontinental Railroad</em> (New York: McGraw-Hill, 1962), 193; Mead B. Kibbey, ed. By Peter E. Palmquist, <em>The Railroad Photographs of Alfred A. Hart</em> (Sacramento, CA: The California State Library Foundation, 33-34, accessed Nov. 5, 2017, <a href="http://cprr.org/Museum/AA_Hart-Mead_Kibbey_CSLF/Alfred_Hart.html">http://cprr.org/Museum/AA_Hart-Mead_Kibbey_CSLF/Alfred_Hart.html</a>; Bain, 322; “From Trail to Tunnel: A History of the Southern Pacific Company,” <em>Southern Pacific Bulletin</em> (July, 1927), 11-12.</p>
+</div>
+</div>
+<a class="map-marker1" data-key="Truckee"></a>
+<a class="map-marker2" data-key="Truckee"></a>
+<div class="section">
+<h3 class="text">"The truth is they are getting smart"</h3>
+<h2 class="text">1867 Strike: From Cisco to Truckee</h2>
+<div class="contour-image">
+<div class="upperright"><b>Elevation</b><br/>5817-6646 ft<br/>1173-2025 m</div>
+<div class="expander"><img alt="Map of the 1867 strike route to Truckee" src="assets/truckee_virtual.png"/><a href="https://earth.google.com/web/@39.31530947,-120.30272522,1992.68170338a,1909.64264756d,35y,100.31130055h,79.71519016t,-0r"><div class="bottomright">View in<br/>Google Earth</div></a></div>
+<div class="caption"></div>
+</div>
+<div class="contour-image">
+<div class="expander"><img alt="Overview map of the 1867 strike" src="assets/strike_overview_virtual.png"/><a href="https://earth.google.com/web/@39.294859,-120.45197385,2136.70801087a,31697.36447729d,35y,-125.46431941h,68.45706236t,-0r"><div class="bottomright">View in<br/>Google Earth</div></a></div>
+<div class="caption"></div>
+</div>
+<div class="text">
+<p>When large numbers of Chinese workers were first hired in 1865 they were paid $26 per month for a six-day workweek, although rates would vary depending on how skilled or dangerous the work. For example, those who worked in the tunnels were paid an extra $1 per month. Chinese workers worked longer hours than white workers and had to pay their headmen or contractors for their own lodging and food; on the other hand, the Central Pacific provided white workers accommodations and food without additional cost, and they were paid more. In spring 1867 the company raised their wages from $31 to $35 per month to try to attract more workers, but the Chinese workers sought parity with Euro-American workers, demanding $40 per month, a workday reduced from eleven to ten hours, and shorter shifts digging in the cramped, dangerous tunnels. Historians estimate that Chinese workers cost between two-thirds and one half of what white workers cost.<sup>1</sup></p>
+<div class="right-image">
+<div><img alt="Laborers near Summit Tunnel" src="assets/summit_laborers.jpg"/></div>
+<div class="caption">“Laborers and Rocks, near opening of Summit Tunnel.” #119, Photograph. Courtesy of The Alfred A. Hart Photo Collection, Special Collections, Stanford University. [<a href="http://web.stanford.edu/group/chineserailroad/cgi-bin/wordpress/laborers-and-rocks-near-opening-of-summit-tunnel-2/">link</a>]</div>
+</div>
+<p>Even though it was spring, the weather was bad, with snow still on the mountaintops; the overseers of the Chinese workers were abusive; the wages were low, and they were forced to work long hours, longer than first stipulated. Chinese workers were being drawn away from the railroad to work in nearby mines, even though the foremen tried to prevent them from leaving, sometimes by force.</p>
+<p>On June 25, 1867 the Chinese railroad workers went out on strike. There had been some labor actions for better pay and conditions but none of the previous strikes were large or sustained. Soon, several thousand workers grading along the eastern slope of the Sierra between Cisco (Mile 92/Kilometer 148) and just before Truckee (Mile 119/Kilometer 191.5), digging tunnels, and doing other jobs put their tools down and stayed in their camps.</p>
+<p>Critics accused the Central Pacific of using the Chinese as slave labor, and one newspaper, the Sacramento <em>Union</em> reported that the workers protested “the right of the overseers of the company to either whip them or restrain them from leaving the road when they desire to seek other employment.”<sup>2</sup> No other source repeats this demand. If true, we can assume the Chinese workers also went on strike for the freedom to move; they were free agents and not slaves.</p>
+<p>The strike posed a grave threat to Crocker, Stanford and the other Associates of the CPRR who received government subsidies based on the miles of track laid. The Chinese knew they had some leverage because labor was so scarce, even Chinese labor. “The truth is they are getting smart,” Charles Crocker’s brother E. B. Crocker wrote. E. B. Crocker and Mark Hopkins considered taking advantage of the newly created Freedmen’s Bureau to hire recently freed slaves as strikebreakers. As Hopkins reasoned, “A Negro labor force would tend to keep the Chinese steady, as the Chinese have kept the Irishmen quiet.”<sup>3</sup></p>
+<p>The strike in the Sierra was the largest collective labor action in American history to that date. Over several days and across a wide range of work camps, strike discipline held firm. As Crocker would recall, “If there had been that number of white laborers [on strike] . . . it would have been impossible to control them. But this strike of the Chinese was just like Sunday all along the work. These men stayed in their camps. That is, they would come out and walk around, but not a word was said. No violence was perpetrated along the whole line.”</p>
+<p>Charles Crocker cut off food and other supplies and did not allow use of the railroad to return to Sacramento. “I stopped the provisions on them,” Crocker later boasted in his testimony to Congress, “stopped the butchers from butchering, and used such coercive measures.” After eight days food ran low and the workers began to suffer, and Crocker, along with construction supervisor James Strobridge, the local Sherriff, and a contingent of deputized white men, confronted leaders of the workers, insisting that he would make no concessions and threatened violence to anyone preventing workers from returning to the job. Facing starvation and threats of violence, the workers ended the strike.<sup>4</sup></p>
+<p>Although the company did not concede to the specific demands, they learned that the Chinese could not be taken for granted. Crocker also pledged not to dock the pay of the workers for their action. The strike showed that they were not docile, that they could fight for their rights. Some suggest that many of their demands were met some time after the strike, thereby allowing Crocker to “save face.”</p>
+<p>Critics of the railroad asserted that the Chinese were “coolies,” and not free labor. Many from the same regions of Guangdong went to South America and the Caribbean in the 1830s to the 1860s, going as indentured labor, as part of the notoriously cruel “coolie trade” characterized by involuntary servitude and mistreatment. Many of those who came to North America worked under different conditions, although they continued to suffer the stigma of being mistakenly labeled as “coolies.”</p>
+<p>Charles Crocker and the rest of the Associates were supporters of Abraham Lincoln; they were anti-slavery defenders of the Union, and they resisted the notion that the railroad workers were “coolies.” Crocker, years later, testified before Congress that Chinese labor was not slavery, “not servile labor ... it is free labor; just as free labor as yours and mine.”<sup>5</sup> They were not slaves, not indentured, not “coolies,” but the Chinese workers were exploited and coerced.</p>
+<p>—</p>
+<p class="indent"><sup>1</sup> <em>Sacramento Daily Union</em>, July 1, 3, 6; Crocker, <em>Report to the</em> <em>Joint Special Committee, </em>669; Eric Arneson, <em>Encyclopedia of U.S. Labor and Working-Class History</em>, vol. 1 (Milton Park, Didcot, UK: Taylor &amp; Francis, 2007), 242; Alexander Saxton, “The Army of Canton in the High Sierra,” <em>Pacific Historical Review</em> 35, no. 2 (May 1996): 149; David R. Roediger and Elizabeth D. Esch, <em>The Production of Difference: Race and the Management of Labor in U.S. History</em> (New York: Oxford University Press, 2014), 77.  </p>
+<p class="indent"><sup>2</sup> <em>Sacramento Daily Union</em>, July 3, 1867.</p>
+<p class="indent"><sup>3</sup>  E. B. Crocker to Collis P. Huntington, June 27, 1867, and Mark Hopkins to Collis P. Huntington, June 27, 1867.</p>
+<p class="indent"><sup>4</sup>  Charles Crocker, testimony, US Congress, <em>Report of the Joint Special Committee to Investigate Chinese Immigration</em>, February 27, 1877, 44th Congress, 2nd Session, Senate Report 689 (Washington, DC: US Government Printing Office, 1877), 669;</p>
+<p class="indent"><sup>5</sup>  Crocker, <em>Report to the Joint Special Committee</em><em>, </em>674</p>
+</div>
+</div>
+<a class="map-marker1" data-key="Reno"></a>
+<a class="map-marker2" data-key="Reno"></a>
+<div class="section">
+<h3 class="text">Laying out a town site</h3>
+<h2 class="text">Reno</h2>
+<div class="contour-image">
+<div class="upperright"><b>Elevation</b><br/>4521 feet<br/>1378 meters</div>
+<div class="expander"><img alt="Map of Reno along the railroad route" src="assets/reno_virtual.png"/><a href="https://earth.google.com/web/@39.52260771,-119.82652928,1380.56995111a,1545.46396865d,35y,88.37337403h,74.09922061t,0r"><div class="bottomright">View in<br/>Google Earth</div></a></div>
+<div class="caption"></div>
+</div>
+<div class="text">
+<p>On April 1, 1868, the town-site was laid out for what would become the city of Reno (Mile 154/Kilometer 248), named after Civil War general Jesse Lee Reno. Chinese workers began grading and laying down ties beyond Reno in the Nevada Territory, while they continued working in the Sierra. On May 1, the line from Truckee to Reno was completed, and on June 15, the gap between Cisco and Truckee was closed. This meant that there was one continuous line from Sacramento to Reno, and the first eastbound passenger train arrived in Reno on June 18, 1868.<sup>1</sup></p>
+<div class="right-image">
+<div><img alt="Chinese railroad worker camp" src="assets/chinese_camp.jpg"/></div>
+<div class="caption">“Chinese Camp Browns Station.” # 313, Photograph. Courtesy of The Alfred A. Hart Photo Collection, Special Collections, Stanford University. [<a href="https://searchworks.stanford.edu/view/tg027sp0209">link</a>]</div>
+</div>
+<p>As that first train going East descended into Truckee valley, an unnamed reporter for San Francisco and Virginia City newspapers observed how “John [the vernacular name for a Chinese laborer] comprehending fully the importance of the event, loses his natural appearance of stolidity and indifference and welcomes with the swinging of his broad brimmed hat and loud, uncouth shouts the iron horse and those that he brings with him.”<sup>2</sup></p>
+<p>Large numbers of Chinese lay tracks northeast of Reno, and by June 1868 thousands of men worked grading hundreds of miles ahead in the Nevada desert. At first Chinese workers were reluctant to enter the desert.</p>
+<p>The tracks reached Wadsworth (Mile 189 Kilometer 304) by July 22, 1868. Water and ties had to be hauled by train to the end of the track and then by wagon teams across dry stretches of desert to the advance work gangs.<sup>3</sup></p>
+<p>Summer heat could reach 120 degrees Fahrenheit/49 Celsius, and many Chinese workers collapsed. Water was essential, and out of desperation engineers discovered fresh water from springs inside mountains on the flanks of the railroad line, and they ran pipes and built storage tanks along the route. Charles Crocker authorized a hot-season pay raise for all workers, including the Chinese.<sup>4</sup> The railroad progressed through Nevada at such a rapid pace that large campsites of up to 5000 men would have to move frequently to keep up with the pace of construction.<sup>5</sup></p>
+<p>—</p>
+<p class="indent"><sup>1</sup> George Kraus, <em>High Road to Promontory: Building the Central Pacific (now the Southern Pacific) across the High Sierra</em> (Palo Alto: American West publishing Company, 1969), 194-195.</p>
+<p class="indent"><sup>2</sup> Quoted in Kraus, 198.</p>
+<p class="indent"><sup>3</sup> John Hoyt Williams, <em>A Great and Shining Road: The Epic Story of the Transcontinental Railroad</em> (Lincoln: University of Nebraska Press, 1988), 207-208]; Kraus, 203.</p>
+<p class="indent"><sup>4</sup> Williams, 208.</p>
+<p class="indent"><sup>5</sup> Kraus 203, Williams, 207, 208.</p>
+</div>
+</div>
+<a class="map-marker1" data-key="Winnemucca"></a>
+<a class="map-marker2" data-key="Winnemucca"></a>
+<div class="section">
+<h3 class="text">Changed the nature of the town</h3>
+<h2 class="text">Winnemucca</h2>
+<div class="contour-image">
+<div class="upperright"><b>Elevation</b><br/>4227 feet<br/>1304 meters</div>
+<div class="expander"><img alt="Map of Winnemucca along the railroad route" src="assets/winnemucca_virtual.png"/><a href="https://earth.google.com/web/@40.96480442,-117.74958725,1302.53199134a,12640.85353616d,35y,75.60776853h,72.89468985t,-0r"><div class="bottomright">View in<br/>Google Earth</div></a></div>
+<div class="caption"></div>
+</div>
+<div class="text">
+<p>The railroad was completed to Winnemucca, 325 miles/523 kilometers from Sacramento, on Oct. 1, 1868, and the town became a center for Chinese life. Observers could see masses of Chinese workers in three sprawling camps with a total of 275 tents. That year and the next local merchants – including some Chinese – rushed in with great anticipation of prosperous business. Eventually, the famous Sing Fat Bazaar of San Francisco opened a branch in the town. The arrival of the railroad changed the nature of Winnemucca, and the CPRR was very influential in its development. According to Professor Sue Fawn Chung, “Winnemucca was a natural commercial center for not only the equipment needed to complete the CPRR to Promontory but also later as a transportation hub to San Francisco to the west, Salt Lake City to the east, and Oregon and Idaho to the north.”<sup>1</sup></p>
+<p>—</p>
+<p class="indent"><sup>1</sup> John Hoyt Williams, <em>A Great and Shining Road: The Epic Story of the Transcontinental Railroad</em> (Lincoln: University of Nebraska Press), 241; George E. Crofutt, <em>Crofutt’s Great Trans-Continental Tourist’s Guide</em> (New York: G. A. Crofutt &amp; Co., 1870), 143; Sue Fawn Chung, “Beyond Railroad Work: Chinese Contributions to the Development of Winnemucca and Elko, Nevada,” in <em>The Chinese and the Iron Road</em>, edited by Gordon H. Chang and Shelley Fisher Fishkin (Stanford: Stanford University Press, forthcoming).</p>
+</div>
+</div>
+<a class="map-marker1" data-key="Battle Mountain"></a>
+<a class="map-marker2" data-key="Battle Mountain"></a>
+<div class="section">
+<h3 class="text">Native Americans join the workforce</h3>
+<h2 class="text">Battle Mountain</h2>
+<div class="contour-image">
+<div class="upperright"><b>Elevation</b><br/>4508 feet<br/>1374 meters</div>
+<div class="expander"><img alt="Map of Battle Mountain along the railroad route" src="assets/battle_mountain_virtual.png"/><a href="https://earth.google.com/web/@40.64081363,-116.97920188,1375.87379701a,12317.48782841d,35y,88.76407479h,73.03953316t,0r"><div class="bottomright">View in<br/>Google Earth</div></a></div>
+<div class="caption"></div>
+</div>
+<div class="text">
+<p>In Nevada the CPRR hired Native American workers, and, according to a reporter who traveled with Charles Crocker, “there are about ten thousand Chinamen, one thousand white men and ‘any number’ of Indians employed on the road.”<sup>1</sup> Crocker also made agreements with the Shoshone and Paiute nations for construction to move ahead unmolested; in exchange, the tribes would have free passage on the trains once they were running.<sup>2</sup></p>
+<p>The Chinese were organized into work gangs, each led by a “headman” or contractor. Gangs lived together and hired their own cook and, in many cases, a medical practitioner who attended to illness and injury. Chinese in their contracts insisted that a Chinese physician be in the vicinity.</p>
+<p>Some Chinese workers learned special skills in grading, tunneling, explosives, drayage, masonry, carpentry, and laying track. Some brought labor skills from China, such as techniques of masonry they used to construct many retaining walls along the railroad route that became famous for their strength and endurance; many of those walls are still standing today. Each work gang had a white (mainly Irish) boss, and white workers would be assigned the more specialized or skilled work, which commanded higher pay. These tasks included the including the actual laying of the rails; Chinese workers were mainly assigned to common labor, such as grading.<sup>3</sup></p>
+<p>Chinese workers had to provide their own food. They insisted on eating Chinese food, which they bought from stores kept in cars near the end of the track operated by Sisson, Wallace &amp; Co (the company that also provided Chinese labor for the railroad).<sup>4</sup> According to one traveler, Charles Nordhoff, the Chinese workers ate “[d]ried oysters, dried cuttle-fish, dried fish, sweet rice crackers, dried bamboo sprouts, salted cabbage, Chinese sugar (which tasted to me very much like sorghum sugar), four kinds of dried fruits, five kinds of desiccated vegetables, vermicelli, dried sea-weed, Chinese bacon cut up into salt cutlets, dried meat of the abelona [sic] shell, pea-nut [sic] oil, dried mushrooms, tea, and rice. They buy also pork of the butcher, and on holidays they eat poultry.” Many of these foodstuffs came from California sources, such as fresh vegetables, but others had to be imported. They also drank tea and hot water, as well as occasional wine, and sometimes took opium. The Irish or white workers were fed mainly meat and potatoes along with whiskey. The Chinese diet and especially the use of boiled water reduced the outbreak of dysentery and other diseases. “Tea boys” would wander through the construction sites pouring out boiled tea from small kegs slung over their shoulders. Cooks also boiled water so that at the end of each day every Chinese worker could take a bath.<sup>5</sup></p>
+<p>—</p>
+<p class="indent"><sup>1</sup> Caxton [W. H. Roads, <em>San Francisco Chronicle</em>] quoted in George Kraus, <em>High Road to Pomontory: Building the Central Pacific (now the Southern Pacific) across the High Sierra</em> (Palo Alto, CA: American West Publishing Company, 1969), 204, 208.</p>
+<p class="indent"><sup>2</sup> Wesley Griswold, <em>A Work of Giants: Building the First Transcontinental Railroad</em> (New York: McGraw-Hill, 1962), 244-245.</p>
+<p class="indent"><sup>3</sup> John Hoyt Williams, <em>A Great and Shining Road: The Epic Story of the Transcontinental Railroad </em>(Lincoln: University of Nebraska Press, 1988), 98.</p>
+<p class="indent"><sup>4</sup> Sisson, Wallace &amp; Co., Advertisement, <em>Railroad Gazetteer</em> 1870, 53.</p>
+<p class="indent"><sup>5</sup> Charles Nordhoff, <em>California: A Book for Travellers and Settlers</em> (New York: Harper &amp; Brothers, 1872, 1874), 190; Williams, 97 - 98.</p>
+</div>
+</div>
+<a class="map-marker1" data-key="Carlin Canyon"></a>
+<a class="map-marker2" data-key="Carlin Canyon"></a>
+<div class="section">
+<h3 class="text">A prosperous community</h3>
+<h2 class="text">Carlin Canyon</h2>
+<div class="contour-image">
+<div class="upperright"><b>Elevation</b><br/>4940 feet<br/>1506 meters</div>
+<div class="expander"><img alt="Map of Carlin Canyon along the railroad route" src="assets/carlin_canyon_virtual.png"/><a href="https://earth.google.com/web/@40.72894515,-116.00393375,1701.59442396a,4772.69825526d,35y,71.61830273h,73.42443896t,0r"><div class="bottomright">View in<br/>Google Earth</div></a></div>
+<div class="caption"></div>
+</div>
+<div class="text">
+<p>The railroad builders reached Carlin Canyon, the eastern end of Elko County (Mile 446), on January 25, 1869; and then the city of Elko (Mile 469), on February 8, 1869. In the spring of 1869, observers could see massed Chinese workers residing in three sprawling camp cities totaling 275 tents.<sup>1</sup></p>
+<p>Unlike many railroad towns that were short-lived, Elko became permanent, the last major town before Utah, and it served miners, ranchers, and travelers. “Chinese railroad workers and Chinese merchants became a part of the community from Elko’s early heyday and helped lay the foundations of its prosperity,” according to Sue Fawn Chung.  In 1870 the census indicates there were seventeen Chinese cooks in Elko. One cook, Quong Kee, worked for the CPRR, and even attended the Golden Spike ceremony in 1869. In 1870 he continued cooking for railroad workers in Elko. He adopted western dress, and one of his specialties was Irish stew, indicating that he was not cooking for the Chinese workers alone. Eventually Quong Kee “settled in Tombstone, Arizona, where he opened the famous Can Can Restaurant that featured pheasant under glass served on white tablecloths and linen napkins.”<sup>2</sup></p>
+<p>—</p>
+<p class="indent"><sup>1</sup> John Hoyt Williams, <em>A Great and Shining Road: The Epic Story of the Transcontinental Railroad</em> (Lincoln: University of Nebraska Press, 1988), 241; George E. Crofutt, <em>Crofutt’s Great Trans-Continental Tourist’s Guide</em> (New York: G. A. Crofutt &amp; Co., 1870), 143.</p>
+<p class="indent"><sup>2</sup> Sue Fawn Chung, “Beyond Railroad Work: Chinese Contributions to the Development of Winnemucca and Elko, Nevada,” in <em>The Chinese and the Iron Road</em>, edited by Gordon H. Chang and Shelley Fisher Fishkin (Stanford: Stanford University Press, forthcoming).</p>
+<p> </p>
+</div>
+</div>
+<a class="map-marker1" data-key="Humboldt Wells"></a>
+<a class="map-marker2" data-key="Humboldt Wells"></a>
+<div class="section">
+<h3 class="text">"No idea how many men"</h3>
+<h2 class="text">Humboldt Wells</h2>
+<div class="contour-image">
+<div class="upperright"><b>Elevation</b><br/>5630 feet<br/>1720 meters</div>
+<div class="expander"><img alt="Map of Humboldt Wells along the railroad route" src="assets/humboldt_wells_virtual.png"/><a href="https://earth.google.com/web/@41.15087647,-114.75895767,1875.16927351a,43169.23038709d,35y,72.72666811h,70.13265274t,0r"><div class="bottomright">View in<br/>Google Earth</div></a></div>
+<div class="caption"></div>
+</div>
+<div class="text">
+<p>Wells is 526 miles/846.5 kilometers from Sacramento, close to the Utah border. Charles Crocker told a newspaper reporter for the <em>San Francisco Chronicle</em>, W. H Roads, that he had no idea exactly how many men worked on the line because “no list of names was kept, and the men worked by the squad, and not as individuals.”</p>
+<div class="right-image">
+<div><img alt="Chinese railroad worker camp near Humboldt Wells" src="assets/chinese_camp2.jpg"/></div>
+<div class="caption">“Chinese Camp At End Of Track.” # 327, Photograph. Courtesy of The Alfred A. Hart Photo Collection, Special Collections, Stanford University. [<a href="https://searchworks.stanford.edu/view/nz617px7637">link</a>]</div>
+</div>
+<p>Crocker explained that Indians and Chinese workers “were so much alike personally that no human being [i.e., white person] could tell them apart.” Consequently, he developed a scheme for paying them “by the wholesale.” Every morning there was a count, another at lunch, and a third count at quitting time. When the time came, the company would send a paymaster in a wagon accompanied by armed guards on horseback and interpreters (Sam Thayer from the company knew several Chinese dialects and he was joined by a Chinese interpreter). They had bags of money for each work gang, and at each one they dropped the money into a worker’s hat with a statement written in Chinese, and the gang boss would divvy up the cash to all the workers in his crew. A similar “wholesale” scheme was done for the Native Americans working on the line.<sup>1</sup></p>
+<p>—</p>
+<p class="indent"><sup>1</sup> Caxton [W. H. Roads], <em>San Francisco Chronicle</em>] quoted in George Kraus, <em>High Road to Promontory: Building the Central Pacific (now the Southern Pacific) across the High Sierra</em> (Palo Alto, CA: American West Publishing Company, 1969), 204, 208.</p>
+</div>
+</div>
+<a class="map-marker1" data-key="10 miles in one day"></a>
+<a class="map-marker2" data-key="10 miles in one day"></a>
+<div class="section">
+<h3 class="text">Besting the Union Pacific record</h3>
+<h2 class="text">10 miles in one day</h2>
+<div class="contour-image">
+<div class="upperright"><b>Elevation</b><br/>4589 feet<br/>1399 meters</div>
+<div class="expander"><img alt="Map of the ten miles laid in one day" src="assets/10_miles_virtual.png"/><a href="https://earth.google.com/web/@41.62964723,-112.67337825,1455.00142916a,7311.76718097d,35y,136.00536717h,73.47616865t,0r"><div class="bottomright">View in<br/>Google Earth</div></a></div>
+<div class="caption"></div>
+</div>
+<div class="text">
+<p>As construction neared Promontory Summit, workers laid ten miles and fifty-six feet of track in one day on April 28, 1869, working between 5 am and 7 pm. The accomplishment was in response to a $10,000 wager Charles Crocker made with Thomas Durant of the Union Pacific that his Central Pacific workers were capable of doing what seemed impossible. A squad of eight Irish rail-handlers and an army of several thousand Chinese accomplished the feat. In the end 25,800 ties, 3,520 rails (averaging 560 lbs. each), 55,080 spikes, 14,050 bolts, and other materials, totaling in weight 4,462,000 pounds, were laid down. The track was not a simple straight line but curved so the workers had to bend the rails for all the curves. “Rails were placed on two blocks and forced into the desired curve by blows of a heavy hammer – a time-consuming process,” according to one account.<sup>1</sup> Crocker related that an Army officer witnessed the advance and said, “I never saw such organization as that. It was just like an army marching over the ground and leaving the track behind them.”<sup>2</sup> The <em>San Francisco Bulletin</em> described the effort as “the greatest work in tracklaying ever accomplished or conceived by railroad men.”<sup>3</sup></p>
+<p>The names of the eight Irish workers were recorded by the railroad; they were taken to Sacramento to be cheered in a parade, their wagon filled with flowers thrown by women and children. None of the Chinese workers’ names were recorded. “With the eight sons of Erin and the sons of ‘John Chinaman’ rest the palms of a great track-laying victory.”<sup>4</sup></p>
+<p>—</p>
+<p class="indent"><sup>1</sup> George Kraus, <em>High Road to Promontory: Building the Central Pacific (now the Southern Pacific) across the High Sierra</em> (Palo Alto: American West Publishing Company), 252.</p>
+<p class="indent"><sup>2</sup> Charles Crocker, quoted in Wesley S. Griswold, <em>A Work of Giants; Building the First Transcontinental Railroad</em> (New York, McGraw Hill, 1962), 311.</p>
+<p class="indent"><sup>3</sup> “Telegraphic Despatches: From the End of the Track,” <em>San Francisco Bulletin</em>, April 29, 1869.</p>
+<p class="indent"><sup>4</sup> Erle Heath, “A Railroad Record that Defies Defeat: How Central Pacific laid ten miles of track in one day back in 1869,” <em>Southern Pacific Bulletin</em>, Vol. XVI, No. 5, May 1928, 3-5.</p>
+</div>
+</div>
+<a class="map-marker1" data-key="Promontory Summit"></a>
+<a class="map-marker2" data-key="Promontory Summit"></a>
+<div class="section">
+<h3 class="text">Invisible workers</h3>
+<h2 class="text">Golden Spike at Promontory Summit</h2>
+<div class="contour-image">
+<div class="upperright"><b>Elevation</b><br/>4907 feet<br/>1496 meters</div>
+<div class="expander"><img alt="Map of Promontory Summit" src="assets/promontory_virtual.png"/><a href="https://earth.google.com/web/@41.61650594,-112.55540349,1496.95049272a,992.23784953d,35y,-117.35106688h,75.1495543t,0r"><div class="bottomright">View in<br/>Google Earth</div></a></div>
+<div class="caption"></div>
+</div>
+<div class="text">
+<p>On May 10, 1869, the Central Pacific Railroad (CPRR), met the Union Pacific Railroad (UPRR) at Promontory Summit, Utah (Mile 690/Kilometer 1110). This completed the Pacific Railroad, as it was called, the key element in the first transcontinental railroad across the United States. A joyous ceremony was held with dignitaries from both railroads, along with a military unit on its way to the San Francisco Presidio. Only four years earlier the country had been divided by a bloody Civil War; the railroad that bound the East Coast to the West was hailed as an emblem of both unity and progress. Thousands of Chinese had been central to the construction of the CPRR, but by the time of the ceremony that celebrated this engineering marvel, almost all of the Chinese and other workers had been either dismissed or were moved west to improve the hasty construction, leaving a few Chinese to complete the work.<sup>1</sup></p>
+<div class="inline-image">
+<div><img alt="Golden Spike ceremony at Promontory Summit" src="assets/promontory_photo.jpg"/></div>
+<div class="caption">"East and West shaking hands at the laying of the last rail." Plate 227. Photograph by Andrew J. Russell. Andrew J. Russell Collection. Courtesy of Oakland Museum of California.</div>
+</div>
+<p>In Alfred Joseph Russell’s iconic photo of the event at Promontory, “East and West Shaking Hands at Laying Last Rail,” it seems that Chinese do not appear in the crowd. With locomotives from each railroad facing each other, their pilots (cowcatchers) almost touching, men are lined up on each side to mark the moment, two chief engineers Greenville Dodge of the Union Pacific Railroad on the left and Samuel Montague of the CPRR on the right lean together with bottles between the smokestacks for a toast. There may be one or two Chinese in baggy and patched work clothes, such as those worn by the workers laying the last track in the scene; yet, oddly, one worker has his back turned to the camera, although no one else stands with his back turned. Next to him there may be another man, similarly dressed, facing the camera, but a white man next to him has his armed extended and holding up his hat. People had to hold their pose a long time to take photos in those days – so it’s odd that this man holds his hat very deliberately to hide the face of the person standing next to him. No one else is the target of a similar gesture or prank. Another, less famous but most informative, photograph by Russell taken minutes before his iconic one shows Chinese workers completing the final work to link the two lines. Eyewitness accounts confirm that it was the Chinese who laid the last rail of the transcontinental.<sup>2</sup></p>
+<p>During the festivities around the country there was little mention of the Chinese labor that played such a major role in the railroad’s construction. There were a few exceptions: At Promontory, a reporter for the <em>San Francisco Newsletter</em> describes one part of the celebration at Promontory ignored by other reporters:</p>
+<blockquote><p>“J.H. Strobridge, when the work was all over, did invite the Chinese who had been brought over from Victory [nearby work camp] for that purpose, to dine at his boarding car. When they entered, all the guests and officers present cheered them as the chosen representatives of the race which have greatly helped to build the road ... a tribute they well deserved and which evidently gave them much pleasure . . .”</p></blockquote>
+<p>During the celebration in Sacramento, E. B. Crocker (Charles’s brother) praised the Chinese in his speech<em>:</em><em> “I wish to call to your minds that the early completion of this railroad we have built has been in large measure due to that poor, despised class of laborers called the Chinese, to the fidelity and industry they have shown.”</em><sup>3</sup></p>
+<p>Many believed that the Chinese railroad workers achieved an engineering marvel – but it was always at a price. The Central Pacific did not keep records of the deaths of any workers on the railroad, but a great many men were lost during construction – and most of those workers were Chinese. Some historians estimate from engineering reports, newspaper articles and other sources that between 50 to 150 lives were lost as a result of snow slides, landslides, explosions, falls and other accidents, as well as sickness; other estimates run to 2000 or more Chinese dead.<sup>4</sup> </p>
+<div class="inline-image">
+<div><img alt="Golden Spike monument at Promontory Summit" src="assets/monument.jpg"/></div>
+<div class="caption">Poetry And Prose Scene At Monument Point North End Of Salt Lake. # 353, Photograph. Courtesy of The Alfred A. Hart Photo Collection, Special Collections, Stanford University. [<a href="https://searchworks.stanford.edu/view/nw180jx5708">link</a>]</div>
+</div>
+<p>There were many consequences of building the first transcontinental railroad. On the positive sides, the railroad made it possible to move goods and people across the country much more quickly. At the same time, American Indian tribes were decimated, their lands stolen and cultures undermined; small farmers settled along the railroad’s route but then they became victims of railroad monopolies. Some Chinese workers returned to China where they helped in the development of their villages and regions, including building the first railroads.</p>
+<p> </p>
+<div class="right-image">
+<div><img alt="Loma Prieta earthquake railroad map" src="assets/loma.png"/></div>
+<div class="caption">“Chinese workers building the Loma Prieta Lumber Co.'s railroad in California.” Photograph. Courtesy of Pajaro Valley Historical Association.</div>
+</div>
+<p>Others who remained in the U.S. went to work in agriculture, mining, and building levees along the rivers; or they entered domestic service or worked in manufacturing to produce cigars and other products. Some continued to work for the Central Pacific to upgrade the hasty often makeshift construction, such as replacing the long but rickety wooden trestle at Secret Town Gap (Mile 62.5/Kilometer 100.5) with a fill, and later to work on maintaining the line. Others went to work on the Union Pacific. Chinese also went on to build the railroad from Sacramento down San Joaquin Valley to Los Angeles. Chinese veterans of the Central Pacific, along with additional compatriots newly arrived from China, also helped to build scores of other railroads throughout the United States and Canada during this period, a time in which the rail mileage of the country more than tripled. Their work continued well into the 20<sup>th</sup> century.</p>
+<p>Although many praised the Chinese for their hard work and contributions to building the country, others attacked them as racial inferiors and competition to white working people. After violent campaigns to expel them, 1882 saw the first of many Congressional acts to exclude Chinese. They were denied the possibility of citizenship and could not even enter the country. Deemed social and political pariahs, Chinese faced extreme racist violence, and they were pushed to the margins of society, and to the margins of public memory and historical scholarship. The Chinese Railroad Workers in North America Project along with other initiatives aims to bring to light their actual contributions and lasting legacy.<sup>5</sup></p>
+<p>—</p>
+<p class="indent"><sup>1</sup> The National Park Service has produced the most thorough study of the Golden Spike site and ceremony: Robert L. Spude, with the assistance of Todd Delyea, <em>Promontory Summit, May 10, 1869 </em>(US National Park Service, Intermountain Region, Cultural Resources Management, 2005). See also J. N. Bowman, “Driving the Last Spike at Promontory 1869,” <em>Utah Historical Quarterly</em> 37 (Winter 1969): 76.</p>
+<p class="indent"><sup>2</sup> See “East and West Shaking Hands: Laying Last Rail,” Plate 227. Photograph by Andrew J. Russell. Andrew J. Russell Collection. Oakland Museum of California; Spude, <em>Promontory Summit</em>, 43.</p>
+<p class="indent"><sup>3</sup> <em>San Francisco Newsletter</em>, May 15, 1869; <em>Sacramento Daily Union</em>, May 8, 1869.</p>
+<p class="indent"><sup>4</sup> Since there are no complete records of deaths, there’s a great deal of debate on the number. For one account, see William F. Chew, <em>Nameless Builders of the Transcontinental Railroad: The Chinese Workers of the Central Pacific Railroad</em> (Bloomington, IN: Trafford, 2003), 94-101. Much of the debate is expressed in the Central Pacific Photographic History Museum web site (cprr.org) and in its discussion section, such as at http://discussion.cprr.net/2007/01/dead-chinese.html.</p>
+<p class="indent"><sup>5</sup> See Zhang Guoxiong with Roland Hsu, “The View from Home: Aspirations of Chinese Railroad Workers and the Building of the Central Pacific Railroad”; Shelley Fisher Fishkin, “The Chinese as Railroad Builders After Promontory”; Gordon H. Chang, “The Chinese and the Stanfords: Nineteenth Century America’s Fraught Relationship with the China Men” in <em>Chinese and the Iron Road: Building the Transcontinental and other Railroads in North America</em>, Edited by Gordon H. Chang and Shelley Fisher Fishkin (Stanford: Stanford University Press, forthcoming).</p>
+<p> </p>
+<p> </p>
+</div>
+</div>
+</div>
+
+
+<script>
+
+document.querySelector(".map-section.map-overview").style.height = pageHeight() + "px";
+
+defer(function() {
+
+var top = 0,
+    nativeSize = 2000,
+    miles = 200,
+    width,
+    π = Math.PI,
+    τ = 2 * π;
+
+var watch = d3.behavior.watch()
+    .on("statechange", statechanged)
+    .on("scroll", scrolled);
+
+var section = d3.selectAll(".map-section.map-overview")
+    .datum(function() {
+      return {
+        zoom: d3.interpolateNumber(+this.getAttribute("data-zoom-start"), +this.getAttribute("data-zoom-end")),
+        path: d3.geo.path().projection(null)
+      };
+    })
+    .call(watch);
+
+var svg = section.append("svg");
+
+var gTranslate = svg.append("g")
+    .attr("class", "map-translate");
+
+var gKey = svg.append("g")
+    .attr("class", "map-key");
+
+var projection = d3.geo.azimuthalEquidistant()
+    .translate([0, 0]);
+
+var render = function() {};
+
+d3.select(window)
+    .on("resize.map-overview", resized)
+    .call(resized);
+
+function resized() {
+  svg
+      .attr("width", width = document.body.clientWidth)
+      .attr("height", function(d) { return d.height = pageHeight(); });
+
+  section
+      .style("height", function(d) { return d.height + "px"; })
+      .each(render);
+}
+
+d3.json("./assets/map-overview.json", function(error, topo) {
+  var labels = topojson.feature(topo, topo.objects.labels),
+      roadCities = topojson.feature(topo, topo.objects.road_cities),
+      russianCities = topojson.feature(topo, topo.objects.russian_cities),
+      europeanCities = topojson.feature(topo, topo.objects.european_cities);
+
+  section.each(function(d) {
+    var section = d3.select(this),
+        gTranslate = section.select(".map-translate"),
+        gKey = section.select(".map-key"),
+        path = d.path;
+
+
+    gTranslate.append("image")
+        .attr("xlink:href", "assets/CPR_map_2000_dash.jpg")
+        .attr("x", -nativeSize / 2)
+        .attr("y", -nativeSize / 2)
+        .attr("width", nativeSize)
+        .attr("height", nativeSize);
+
+    gTranslate.append("g")
+        .attr("class", "map-chatter")
+        .attr("transform", "translate(400,-920)")
+      .selectAll("text")
+        .data([
+          "Between 1865 and 1869, thousands of Chinese",
+          "migrants toiled at a grueling pace and in",
+          "perilous working conditions to help construct",
+          "America’s first Transcontinental Railroad."
+        ])
+      .enter().append("text")
+        .attr("dy", function(d, i) { return i * 1.7 +24 + "em"; })
+        .attr("dx", "-13em")
+        .text(function(d) { return d; });
+
+
+  });
+
+  render = function(d) {
+    var section = d3.select(this),
+        svg = section.select("svg"),
+        gTranslate = section.select(".map-translate"),
+        gKey = section.select(".map-key");
+
+    var height = d.height,
+        availHeight = innerHeight - 40,
+        t = (availHeight - top) / (availHeight + height),
+        scale = Math.max(height, width) / nativeSize * Math.pow(2, d.zoom(t)),
+        visibleHeight = top < 0 ? height + top : Math.min(height, availHeight - top) + 40;
+
+    // Compute geographic distance along 10% width segment, and round to a nice number.
+    // Then convert distance back to angular measure in degrees and project.
+    var pixels = Math.round(projection.scale(3500 * scale)([miles / 3963.1676 * 180 / π, 0])[0]);
+
+    svg.select("image")
+        .attr("transform", "scale(" + scale + ")");
+
+    gTranslate
+        .attr("transform", "translate(" + width / 2 + "," + (t * height + 20) + ")");
+
+    gTranslate.selectAll(".map-label > text")
+        .attr("transform", function(d) { return "translate(" + d.geometry.coordinates[0] * scale + "," + d.geometry.coordinates[1] * scale + ")"; });
+
+    gTranslate.select(".map-chatter")
+        .style("fill-opacity", Math.min(1, (t - .28) * 4));
+
+    gKey
+        .attr("transform", "translate(" + (width - pixels - 80.5) + "," + ((top > 0 ? visibleHeight : height) - 80.5) + ")");
+
+    gKey.select("path")
+        .attr("d", "M0,5V0H" + pixels + "V5");
+
+    gKey.select("text:first-of-type")
+        .attr("x", pixels / 2);
+
+    gKey.select("text:last-of-type")
+        .attr("x", pixels);
+  };
+
+  section.each(render);
+});
+
+function statechanged() {
+  d3.select(this).select("svg").style("display", d3.event.state ? null : "none");
+}
+
+function scrolled() {
+  top = d3.event.rect.top;
+  d3.select(this).each(render);
+}
+
+});
+
+</script>
+<style>
+
+.footer-section {
+ font: 300 12px 'Merriweather Sans', sans;
+  background: #000;
+  padding: 7px 0;
+  text-align: center;
+  width: 100%;
+}
+
+.footer-section a {
+  border-right: 1px solid #ccc;
+  color: #aaa;
+  margin-right: 7px;
+  padding-right: 7px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.footer-section a:last-child {
+  border-right: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-section a:hover {
+  text-dceoration: underline;
+}
+
+</style>
+<div class="section footer-section">
+<a href="http://cesta.stanford.edu/">©2018 Chinese Railroad Workers in North America Project at Stanford University. All Rights Reserved.</a>
+</div>
+<script src="assets/lib.js"></script>
+<script>(function() {
+
+var watched = [];
+
+d3.behavior.watch = function() {
+  var event = d3.dispatch("statechange", "scroll");
+
+  function watch(selection) {
+    selection.each(function(i) {
+      watched.push({
+        element: this,
+        state: 0,
+        index: i,
+        event: event
+      });
+    });
+  }
+
+  return d3.rebind(watch, event, "on");
+};
+
+if (/iPhone|iPad|iPad/.test(navigator.userAgent)) {
+  d3.select("body")
+      .classed("ios", "true");
+
+  d3.select(window)
+      .on("resize.watch", watch_scrolledStatic)
+      .on("DOMContentLoaded.watch", watch_scrolledStatic);
+} else {
+  d3.select(window)
+      .on("resize.watch", watch_scrolled)
+      .on("scroll.watch", watch_scrolled)
+      .on("DOMContentLoaded.watch", watch_scrolled);
+}
+
+function watch_scrolled() {
+
+  watched.forEach(function(watch) {
+    var rect = watch.element.getBoundingClientRect();
+    if (rect.top + rect.height < 0 || rect.bottom - rect.height - innerHeight > 0) {
+      watch_state(watch, 0);
+    } else {
+      var t = rect.top / (innerHeight - rect.height);
+      watch_state(watch, t < 0 || t > 1 ? 1 : 2);
+      watch_dispatch(watch, {type: "scroll", offset: t, rect: rect});
+    }
+  });
+}
+
+function watch_scrolledStatic() {
+  watched.forEach(function(watch) {
+    watch_state(watch, 1);
+    watch_dispatch(watch, {type: "scroll", offset: .5, rect: {top: 0}}); // XXX rect
+  });
+}
+
+function watch_state(watch, state1) {
+  var state0 = watch.state;
+  if (state0 !== state1) watch_dispatch(watch, {
+    type: "statechange",
+    state: watch.state = state1,
+    previousState: state0
+  });
+}
+
+function watch_dispatch(watch, event) {
+	
+  var element = watch.element,
+      sourceEvent = event.sourceEvent = d3.event;
+  try {
+    d3.event = event;
+    watch.event[event.type].call(element, element.__data__, watch.index);
+  } finally {
+    d3.event = sourceEvent;
+  }
+}
+
+await();
+
+})();</script>
+<!--<![endif]-->
+<style>
+
+img[width="0"] {
+  position: absolute;
+}
+
+</style>
+<script type="text/javascript">
+
+  $('.slider').slider();
+
+</script>
+
+<script src="js/vendor/jquery-2.1.3.min.js" type="text/javascript"></script>
+<script src="js/before-after.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $('.ba-slider').beforeAfter();
+</script>
+<!-- readmore.js must come after jQuery -->
+<script src="js/readmore.js"></script>
+<script>
+  // Wait for images to render so readmore measures correctly
+  $(window).on('load', function () {
+    $('.expander').readmore({
+      collapsedHeight: 380,                 // pick the preview height you want
+      speed: 200,
+      moreLink: '<a href="#">Expand virtual view</a>',
+      lessLink: '<a href="#">Collapse</a>',
+      blockCSS: 'display:block; overflow:hidden;' // make sure content is clipped
+    });
+  });
+</script>
+<script>
+    $('#info').readmore({
+      moreLink: '<a href="#">Usage, examples, and options</a>',
+      collapsedHeight: 384,
+      afterToggle: function(trigger, element, expanded) {
+        if(! expanded) { // The "Close" link was clicked
+          $('html, body').animate({scrollTop: element.offset().top}, {duration: 100});
+        }
+      }
+    });
+
+    $('.expander').readmore({speed: 500});
+    
+    
+    function hideshow() {
+    	var x = document.getElementById("scrolling_map");
+    	if (x.style.display === "none") {
+     	   x.style.display = "block";
+    	} else {
+    	    x.style.display = "none";
+    	}
+}
+    
+  </script>
+<script src="js/jquery.easyModal.js" type="text/javascript"></script>
+<script type="text/javascript">
+	$(function() {
+		$('.easy-modal').easyModal({
+			top: 800,
+			overlay: 0.2
+		});
+
+		$('.easy-modal-open').click(function(e) {
+			var target = $(this).attr('href');
+			$(target).trigger('openModal');
+			e.preventDefault();
+		});
+
+		$('.easy-modal-close').click(function(e) {
+			$('.easy-modal').trigger('closeModal');
+		});
+
+		$('.easy-modal-animated').easyModal({
+			top: 200,
+			overlay: 0.2,
+			transitionIn: 'animated bounceInLeft',
+			transitionOut: 'animated bounceOutRight',
+			closeButtonClass: '.animated-close'
+		});
+	});
+	</script>
+<footer class="p3 center h6 clearfix gray light border-box" role="contentinfo"><a class="accessibility-link" href="../accessibility/index.html">Accessibility</a></footer>
+</body>
+</html>
