@@ -60,3 +60,70 @@ h2,
 .entry-content h2 {
   font-size: 1.5rem;
 }
+
+/* Responsive video embeds for the static site. */
+.video-embed {
+  width: 100%;
+  max-width: 720px;
+  aspect-ratio: 16 / 9;
+  margin: 1.5rem 0 0.75rem;
+}
+
+.video-embed iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
+/* Static, accessible interview transcript accordions. */
+.interview-accordion {
+  border-top: 1px solid #ddd;
+  margin: 0;
+}
+
+.interview-accordion:last-of-type {
+  border-bottom: 1px solid #ddd;
+}
+
+.interview-accordion summary {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  font-size: 1.125rem;
+  font-weight: 700;
+  gap: 0.65rem;
+  letter-spacing: 0;
+  line-height: 1.35;
+  padding: 0.9rem 2rem 0.9rem 0;
+}
+
+.interview-accordion summary::-webkit-details-marker {
+  display: none;
+}
+
+.interview-accordion summary::before {
+  color: rgb(68, 68, 68);
+  content: "\25B6";
+  flex: 0 0 auto;
+  font-size: 0.75em;
+  transition: transform 0.15s ease;
+}
+
+.interview-accordion[open] summary::before {
+  transform: rotate(90deg);
+}
+
+.interview-accordion summary:focus {
+  outline: 3px solid #00548f;
+  outline-offset: 2px;
+}
+
+.interview-accordion-content {
+  padding: 0 0 1rem;
+}
+
+/* Static site: never block page display behind the old WordPress loader. */
+.loader {
+  display: none !important;
+}
